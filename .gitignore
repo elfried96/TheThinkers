@@ -90,3 +90,6 @@ coverage.xml
 # PyCharm
 .idea/
 .claude/
+
+# Large data files
+IA/Data_Hackathon_IA_2025/
