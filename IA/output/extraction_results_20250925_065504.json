@@ -1,0 +1,82 @@
+{
+  "extraction_metadata": {
+    "timestamp": "2025-09-25T06:55:04.704486",
+    "extractor_version": "1.0.0",
+    "ocr_engine": "tesseract",
+    "language": "fr",
+    "confidence_threshold": 0.6,
+    "use_gpu": false,
+    "preprocessing_enabled": true
+  },
+  "extraction_statistics": {
+    "total_files": 1,
+    "successful_extractions": 0,
+    "failed_extractions": 1,
+    "total_coordinates": 0,
+    "average_coordinates_per_file": 0.0,
+    "processing_time_total": 0.594779,
+    "processing_time_average": 0.594779,
+    "file_types": {
+      "image": 1
+    },
+    "extraction_engines": {
+      "tesseract": 1
+    },
+    "quality_distribution": {
+      "high": 0,
+      "medium": 1,
+      "low": 0
+    },
+    "success_rate": 0.0
+  },
+  "results": [
+    {
+      "file_path": "Data_Hackathon_IA_2025/Training_Data/leve106.png",
+      "file_type": "image",
+      "extraction_engine": "tesseract",
+      "processing_time": 0.594779,
+      "image_processing": {
+        "original_path": "Data_Hackathon_IA_2025/Training_Data/leve106.png",
+        "processed_image": "[[ 56  56  56 ...  58  58  58]\n [ 56  56  56 ...  58  58  58]\n [ 56  56  56 ...  58  58  58]\n ...\n [ 26  22  31 ... 201 197 187]\n [ 26  22   2 ... 121 119 111]\n [ 26  23  19 ...   5   5   5]]",
+        "quality_metrics": {
+          "initial": {
+            "sharpness": 2400.8122558580076,
+            "contrast": 60.710467797244405,
+            "brightness": 205.1998459761263,
+            "noise_level": 6.8628866640996025,
+            "overall_quality": 0.7315304929934036
+          },
+          "final": {
+            "sharpness": 2400.8122558580076,
+            "contrast": 60.710467797244405,
+            "brightness": 205.1998459761263,
+            "noise_level": 6.8628866640996025,
+            "overall_quality": 0.7315304929934036
+          }
+        },
+        "processing_applied": [
+          "preprocessing"
+        ],
+        "rotation_corrected": 0.0,
+        "processing_success": true
+      },
+      "ocr_result": {
+        "extraction_method": "TesseractExtractor",
+        "language": "fr",
+        "confidence_threshold": 0.6,
+        "processing_time": 0.4367043972015381,
+        "raw_text": "TITRE SURFACE : 1/500",
+        "text_confidence": 0.855,
+        "coordinates_found": [],
+        "coordinate_count": 0,
+        "extraction_success": false,
+        "timestamp": "2025-09-25T06:55:04.267475"
+      },
+      "coordinates_found": [],
+      "coordinate_count": 0,
+      "extraction_success": false,
+      "quality_score": 0.7315304929934036,
+      "timestamp": "2025-09-25T06:55:04.704361"
+    }
+  ]
+}

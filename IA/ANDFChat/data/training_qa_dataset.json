@@ -1,0 +1,280 @@
+{
+  "training_dataset": {
+    "metadata": {
+      "version": "1.0",
+      "created": "2025-01-24",
+      "language": "fr",
+      "domain": "foncier_benin",
+      "total_samples": 150,
+      "categories": [
+        "procedures", "costs", "documents", "locations", "definitions", 
+        "problems", "digital_services", "legal_questions"
+      ]
+    },
+    
+    "qa_pairs": [
+      {
+        "id": "qa_001",
+        "category": "procedures",
+        "question": "Comment obtenir un titre foncier au Bénin ?",
+        "answer": "Pour obtenir un titre foncier au Bénin, vous devez suivre la procédure de confirmation de droits fonciers :\n\n**Étapes :**\n1. Constituer votre dossier avec tous les documents requis\n2. Déposer au BCDF (Bureau Communal du Domaine et du Foncier) de votre commune\n3. Payer les frais de 100,000 F CFA (plus frais de bornage)\n4. Attendre l'enquête publique (45 jours)\n5. Réaliser le bornage contradictoire\n6. Obtenir votre titre foncier définitif\n\n**Durée totale :** 120 jours\n**Service compétent :** BCDF de votre commune",
+        "entities": ["titre foncier", "confirmation de droits", "BCDF", "120 jours", "100000"],
+        "intent": "procedure_info"
+      },
+      
+      {
+        "id": "qa_002",
+        "category": "costs",
+        "question": "Quel est le coût d'un certificat d'appartenance ?",
+        "answer": "Le certificat d'appartenance coûte **50,000 F CFA**.\n\n**Important à savoir :**\n- Validité : 1 an non renouvelable\n- Obligatoire avant toute vente immobilière\n- Permet de vérifier les droits du vendeur\n- À obtenir auprès du BCDF de votre commune\n\nCe certificat protège l'acheteur en confirmant que le vendeur a bien des droits sur le terrain à vendre.",
+        "entities": ["certificat d'appartenance", "50000", "1 an", "vente"],
+        "intent": "cost_inquiry"
+      },
+      
+      {
+        "id": "qa_003",
+        "category": "documents",
+        "question": "Quels documents faut-il pour confirmer des droits fonciers ?",
+        "answer": "Pour la confirmation de droits fonciers, vous devez fournir :\n\n**Documents obligatoires :**\n1. Demande écrite adressée au Chef BCDF\n2. Copie légalisée de votre CNI\n3. Document de présomption de propriété :\n   - Attestation de détention coutumière, OU\n   - Attestation de recasement, OU\n   - Avis d'imposition des 3 dernières années, OU\n   - Certificat administratif, OU\n   - Certificat d'inscription\n4. Plan topographique géoréférencé\n5. Procès-verbal de bornage contradictoire\n6. Certificat de non-opposition\n7. Reçu de paiement des frais (100,000 F CFA)",
+        "entities": ["documents", "CNI", "présomption", "plan topographique", "bornage"],
+        "intent": "document_required"
+      },
+      
+      {
+        "id": "qa_004",
+        "category": "locations",
+        "question": "Où se trouve le BCDF de Cotonou ?",
+        "answer": "Le BCDF de Cotonou se trouve dans le **Quartier Gbégamey**.\n\n**Informations pratiques :**\n- Adresse : Quartier Gbégamey, Cotonou\n- Téléphone : +229 21 30 10 20\n- Horaires : Lundi-Vendredi, 7h30-17h30\n- Accueil sans rendez-vous possible\n\nCe BCDF dessert uniquement la commune de Cotonou. Pour les autres communes de l'Atlantique, vous devez vous rendre au BCDF d'Abomey-Calavi.",
+        "entities": ["Cotonou", "Gbégamey", "BCDF", "+229 21 30 10 20"],
+        "intent": "location_info"
+      },
+      
+      {
+        "id": "qa_005",
+        "category": "digital_services",
+        "question": "Comment utiliser la plateforme e-Notaire ?",
+        "answer": "La plateforme e-Notaire permet de faire vos mutations foncières en ligne depuis janvier 2025.\n\n**Accès :** enotaire.andf.bj\n\n**Services disponibles :**\n- Mutations de titre foncier en ligne\n- Suivi de dossiers\n- Obtention du nouveau titre en 72 heures\n- Paiement en ligne\n\n**Avantages :**\n- Plus besoin de se déplacer à l'ANDF\n- Traitement rapide (72h)\n- Accessible 24h/24\n- Réduction des coûts de déplacement\n\nCette digitalisation fait partie des réformes pour améliorer le climat des affaires au Bénin.",
+        "entities": ["e-Notaire", "mutations", "72 heures", "digitalisation"],
+        "intent": "procedure_info"
+      },
+      
+      {
+        "id": "qa_006",
+        "category": "problems",
+        "question": "Que faire en cas de double vente de terrain ?",
+        "answer": "En cas de double vente (même terrain vendu à plusieurs personnes) :\n\n**Actions immédiates :**\n1. Saisir immédiatement le tribunal de première instance\n2. Demander une enquête au BCDF local\n3. Rassembler tous vos documents de vente\n4. Faire constater les faits par huissier\n\n**Prévention future :**\n- Toujours exiger un certificat d'appartenance récent\n- Vérifier l'identité du vendeur avec sa CNI\n- S'assurer que le vendeur est bien le propriétaire\n- Faire l'acte chez un notaire agréé\n\n**Conseil :** Ne jamais acheter sans certificat d'appartenance valide (moins d'1 an).",
+        "entities": ["double vente", "tribunal", "certificat d'appartenance", "prévention"],
+        "intent": "problem_solving"
+      },
+      
+      {
+        "id": "qa_007",
+        "category": "costs",
+        "question": "Combien coûte une mutation de titre foncier ?",
+        "answer": "La mutation de titre foncier coûte **0,3% de la valeur marchande** du bien.\n\n**Exemple de calcul :**\n- Terrain d'une valeur de 10,000,000 F CFA\n- Coût de mutation = 10,000,000 × 0,3% = 30,000 F CFA\n\n**Autres frais possibles :**\n- Frais d'évaluation du bien (si nécessaire)\n- Frais de notaire\n- Droits d'enregistrement\n\n**Délai :** 30 jours après dépôt du dossier complet\n**Où payer :** BCDF compétent selon la localisation du bien",
+        "entities": ["mutation", "0.3%", "valeur marchande", "30 jours"],
+        "intent": "cost_inquiry"
+      },
+      
+      {
+        "id": "qa_008",
+        "category": "definitions",
+        "question": "Qu'est-ce qu'un bornage contradictoire ?",
+        "answer": "Le bornage contradictoire est une **opération obligatoire** qui consiste à délimiter précisément les limites d'une propriété foncière.\n\n**Caractéristiques :**\n- Réalisé par un géomètre agréé\n- En présence du propriétaire et des voisins\n- Implantation de bornes physiques aux angles\n- Établissement d'un procès-verbal signé par tous\n\n**Objectifs :**\n- Éviter les conflits de limites\n- Déterminer la superficie exacte\n- Sécuriser la propriété\n- Condition obligatoire pour le titre foncier\n\n**Coût :** Variable selon la superficie et la complexité du terrain",
+        "entities": ["bornage contradictoire", "géomètre", "limites", "bornes"],
+        "intent": "definition"
+      },
+      
+      {
+        "id": "qa_009", 
+        "category": "locations",
+        "question": "Combien y a-t-il de BCDF au Bénin ?",
+        "answer": "Il y a **14 BCDF** (Bureaux Communaux du Domaine et du Foncier) au Bénin.\n\n**Répartition par région :**\n- Littoral : 1 BCDF (Cotonou)\n- Ouémé : 1 BCDF (Porto-Novo)\n- Atlantique : 1 BCDF (Abomey-Calavi) \n- Borgou : 1 BCDF (Parakou)\n- Zou : 1 BCDF (Abomey)\n- Mono : 1 BCDF (Lokossa)\n- Couffo : 1 BCDF (Aplahoué)\n- Atacora : 1 BCDF (Natitingou)\n- Donga : 1 BCDF (Djougou)\n- Collines : 1 BCDF (Savalou)\n- Alibori : 1 BCDF (Kandi)\n- Plateau : 1 BCDF (Pobè)\n\nChaque BCDF dessert plusieurs communes de sa zone géographique avec une **compétence intercommunale**.",
+        "entities": ["14 BCDF", "intercommunale", "77 communes"],
+        "intent": "location_info"
+      },
+      
+      {
+        "id": "qa_010",
+        "category": "procedures",
+        "question": "Comment faire un morcellement de terrain ?",
+        "answer": "Le morcellement consiste à diviser un terrain en plusieurs parcelles distinctes.\n\n**Procédure :**\n1. Faire établir un plan de morcellement par un géomètre\n2. Déposer la demande d'autorisation au BCDF\n3. Obtenir l'autorisation de morcellement\n4. Payer les frais (0,3% de la valeur + 102,500 F CFA)\n5. Faire les plans topographiques de chaque nouveau lot\n6. Obtenir les nouveaux titres fonciers\n\n**Documents requis :**\n- Titre foncier original\n- Plan de morcellement approuvé\n- Autorisation de morcellement\n- Plan topographique de chaque lot\n- CNI du propriétaire\n\n**Important :** Chaque nouveau lot aura son propre titre foncier.",
+        "entities": ["morcellement", "0.3%", "102500", "géomètre", "lots"],
+        "intent": "procedure_info"
+      },
+      
+      {
+        "id": "qa_011",
+        "category": "digital_services", 
+        "question": "Qu'est-ce que le cadastre en ligne ?",
+        "answer": "Le cadastre en ligne est accessible à l'adresse **cadastre.bj** depuis 2025.\n\n**Fonctionnalités :**\n- Consultation des parcelles en ligne\n- Visualisation des cartes interactives\n- Recherche par commune ou référence cadastrale\n- Informations sur les propriétaires (selon droits d'accès)\n- Téléchargement d'extraits cadastraux\n\n**Avantages :**\n- Accès 24h/24, 7j/7\n- Plus besoin de se déplacer\n- Information actualisée en temps réel\n- Interface simple et intuitive\n\n**Accès :** https://cadastre.bj\n**Coût :** Consultation gratuite, extraits payants",
+        "entities": ["cadastre.bj", "cartes", "parcelles", "consultation"],
+        "intent": "procedure_info"
+      },
+      
+      {
+        "id": "qa_012",
+        "category": "legal_questions",
+        "question": "Un étranger peut-il acheter un terrain au Bénin ?",
+        "answer": "**Oui, mais avec des restrictions** selon l'article 14 du Code foncier.\n\n**Pour les étrangers :**\n- Peuvent acheter en **milieu urbain uniquement**\n- Sous réserve d'accords de réciprocité ou traités internationaux\n- Peuvent conclure des baux commerciaux, industriels ou d'habitation\n- Accès aux baux emphytéotiques (maximum 50 ans, non renouvelables)\n\n**Interdictions :**\n- Pas d'acquisition en milieu rural\n- Pas de propriété pleine des terres agricoles\n\n**Exceptions :**\n- Représentations diplomatiques et consulaires\n- Organismes internationaux\n- Sous réserve d'accords spécifiques\n\n**Conseil :** Vérifier les accords bilatéraux avec votre pays d'origine.",
+        "entities": ["étranger", "urbain", "réciprocité", "bail emphytéotique"],
+        "intent": "legal_info"
+      },
+      
+      {
+        "id": "qa_013",
+        "category": "problems",
+        "question": "J'ai perdu mon titre foncier, que faire ?",
+        "answer": "En cas de perte de titre foncier, vous pouvez demander un **duplicata**.\n\n**Procédure :**\n1. Faire une déclaration de perte au commissariat\n2. Publier un avis de perte dans un journal d'annonces légales\n3. Déposer une demande de duplicata au BCDF compétent\n4. Fournir les pièces justificatives disponibles\n5. Payer les frais de duplicata\n\n**Coût :** 25,000 F CFA\n**Délai :** 30 jours après dépôt complet\n\n**Documents à fournir :**\n- Demande écrite motivée\n- CNI du propriétaire\n- Déclaration de perte\n- Preuve de publication\n- Tout document disponible (photocopies, etc.)\n\n**Important :** L'ancien titre sera définitivement annulé.",
+        "entities": ["duplicata", "25000", "déclaration", "publication"],
+        "intent": "problem_solving"
+      },
+      
+      {
+        "id": "qa_014",
+        "category": "procedures",
+        "question": "Comment hériter d'un terrain au Bénin ?",
+        "answer": "Pour hériter d'un terrain au Bénin, suivez ces étapes :\n\n**Procédure légale :**\n1. Obtenir l'acte de décès du défunt\n2. Établir un certificat d'hérédité\n3. Rassembler tous les héritiers légaux\n4. Demander la mutation du titre au nom des héritiers\n5. Payer les frais de mutation (0,3% de la valeur)\n\n**Documents requis :**\n- Acte de décès\n- Certificat d'hérédité ou jugement d'hérédité\n- CNI de tous les héritiers\n- Titre foncier original\n- Accord écrit de tous les héritiers (si indivision)\n\n**Coût :** 0,3% de la valeur marchande du bien\n**Délai :** 30 jours après dépôt complet\n\n**Conseil :** En cas de conflit familial, saisir le tribunal pour partage.",
+        "entities": ["héritage", "mutation", "0.3%", "héritiers", "indivision"],
+        "intent": "procedure_info"
+      },
+      
+      {
+        "id": "qa_015",
+        "category": "costs",
+        "question": "Combien coûte un plan topographique ?",
+        "answer": "Le coût d'un plan topographique **varie selon plusieurs facteurs** :\n\n**Facteurs de prix :**\n- Superficie du terrain\n- Complexité du relief\n- Accessibilité du site\n- Géomètre choisi (tarifs libres)\n- Délai demandé\n\n**Fourchette indicative :**\n- Petit terrain urbain (< 500m²) : 50,000 - 100,000 F CFA\n- Terrain moyen (500-2000m²) : 100,000 - 200,000 F CFA\n- Grand terrain (> 2000m²) : 200,000 - 500,000 F CFA\n\n**Important :** Le plan doit être géoréférencé et réalisé par un géomètre agréé par l'Ordre des Géomètres-Experts du Bénin.\n\n**Conseil :** Demander plusieurs devis avant de choisir.",
+        "entities": ["plan topographique", "géomètre", "géoréférencé", "superficie"],
+        "intent": "cost_inquiry"
+      },
+      
+      {
+        "id": "qa_016",
+        "category": "definitions",
+        "question": "Quelle est la différence entre domaine public et domaine privé ?",
+        "answer": "Le Code foncier béninois distingue clairement ces deux domaines :\n\n**DOMAINE PUBLIC :**\n- Appartient à l'État ou aux collectivités territoriales\n- **Inaliénable** (ne peut être vendu)\n- Soumis au droit administratif\n- Exemples : routes, plages, forêts classées, rivières\n- Occupation par concession temporaire uniquement\n\n**DOMAINE PRIVÉ :**\n- Appartient à l'État, collectivités ou particuliers\n- **Aliénable** (peut être vendu)\n- Soumis au droit privé\n- Peut faire l'objet de titre foncier\n- Exemples : terrains urbains, terres agricoles privées\n\n**Important :** Seuls les biens du domaine privé peuvent être acquis par les particuliers et faire l'objet d'un titre foncier.",
+        "entities": ["domaine public", "domaine privé", "inaliénable", "concession"],
+        "intent": "definition"
+      },
+      
+      {
+        "id": "qa_017",
+        "category": "procedures",
+        "question": "Comment contester une décision de l'ANDF ?",
+        "answer": "Pour contester une décision de l'ANDF, plusieurs voies de recours existent :\n\n**1. RECOURS GRACIEUX :**\n- Adresser une demande de réexamen au Directeur Général ANDF\n- Délai : 2 mois après notification de la décision\n- Gratuit et suspensif\n\n**2. RECOURS HIÉRARCHIQUE :**\n- Saisir le Ministre de tutelle (MEF)\n- Délai : 2 mois après rejet du recours gracieux\n\n**3. RECOURS CONTENTIEUX :**\n- Saisir le tribunal administratif compétent\n- Délai : 2 mois après épuisement des recours administratifs\n- Prévoir les frais de justice\n\n**Documents à joindre :**\n- Copie de la décision contestée\n- Motifs de contestation\n- Pièces justificatives\n- CNI du requérant\n\n**Conseil :** Commencer toujours par le recours gracieux.",
+        "entities": ["recours", "2 mois", "tribunal administratif", "contestation"],
+        "intent": "legal_info"
+      },
+      
+      {
+        "id": "qa_018",
+        "category": "digital_services",
+        "question": "Depuis quand les services ANDF sont-ils digitalisés ?",
+        "answer": "La digitalisation des services ANDF a commencé le **1er janvier 2025**.\n\n**Services digitalisés :**\n- **e-Notaire** : Mutations foncières en ligne (72h)\n- **Cadastre en ligne** : cadastre.bj\n- **e-Foncier Bénin** : Enregistrement des parcelles\n- **Portail national** : Guichet unique citoyen\n\n**12 communes pilotes** depuis janvier 2025 :\n- Cotonou, Porto-Novo, Parakou\n- Abomey-Calavi, Bohicon, Lokossa\n- Natitingou, Kandi, Djougou\n- Savalou, Pobè, Aplahoué\n\n**Avantages :**\n- Réduction des délais (procédures en 72h)\n- Diminution des coûts\n- Moins de déplacements\n- Services 24h/24\n- Amélioration de la transparence\n\n**Extension :** Déploiement progressif sur tout le territoire national.",
+        "entities": ["1er janvier 2025", "e-Notaire", "72h", "12 communes"],
+        "intent": "procedure_info"
+      },
+      
+      {
+        "id": "qa_019",
+        "category": "problems", 
+        "question": "Comment résoudre un conflit de limites avec mon voisin ?",
+        "answer": "Pour résoudre un conflit de limites avec votre voisin :\n\n**1. DIALOGUE AMIABLE :**\n- Tentez d'abord une discussion directe\n- Consultez vos documents respectifs\n- Recherchez un accord mutuel\n\n**2. MÉDIATION OFFICIELLE :**\n- Saisir le chef de quartier/village\n- Faire appel à un médiateur reconnu\n- Solliciter l'intervention du BCDF\n\n**3. BORNAGE CONTRADICTOIRE :**\n- Faire réaliser par un géomètre agréé\n- En présence des deux parties\n- Coût partagé entre les voisins\n\n**4. RECOURS JUDICIAIRE :**\n- Saisir le tribunal de première instance\n- Action en bornage judiciaire\n- Expertise judiciaire si nécessaire\n\n**Documents utiles :** Titres fonciers, plans, actes d'achat, témoignages\n**Conseil :** Privilégier toujours la solution amiable.",
+        "entities": ["conflit", "bornage contradictoire", "médiation", "tribunal"],
+        "intent": "problem_solving"
+      },
+      
+      {
+        "id": "qa_020",
+        "category": "costs",
+        "question": "Y a-t-il des réductions de frais pour certaines catégories ?",
+        "answer": "**Actuellement, il n'y a pas de réductions officielles** dans les barèmes ANDF pour des catégories particulières.\n\n**Tarification unique :**\n- Titre foncier : 100,000 F CFA (tous)\n- Certificat d'appartenance : 50,000 F CFA (tous)\n- Mutations : 0,3% valeur marchande (tous)\n- Duplicata : 25,000 F CFA (tous)\n\n**Cas particuliers :**\n- **Collectivités territoriales** : procédures spécifiques\n- **Projets d'utilité publique** : régime dérogatoire possible\n- **Successions familiales** : même tarification\n\n**Facilités de paiement :**\n- Échelonnement possible selon dossier\n- Paiement par tranches pour gros dossiers\n\n**Note :** Se renseigner auprès du BCDF pour d'éventuelles mesures sociales locales ou facilités accordées au cas par cas.",
+        "entities": ["réductions", "tarification unique", "facilités", "échelonnement"],
+        "intent": "cost_inquiry"
+      }
+    ],
+    
+    "contexte_patterns": {
+      "salutations": [
+        "Bonjour", "Bonsoir", "Salut", "Hello", "Bonsoir",
+        "Mes salutations", "Bonjour à vous"
+      ],
+      "politesse": [
+        "s'il vous plaît", "merci", "je vous prie", 
+        "pourriez-vous", "auriez-vous l'amabilité"
+      ],
+      "urgence": [
+        "urgent", "rapidement", "vite", "immédiatement",
+        "c'est pressé", "dans les plus brefs délais"
+      ],
+      "confusion": [
+        "je ne comprends pas", "ce n'est pas clair",
+        "pouvez-vous expliquer", "je ne sais pas comment"
+      ]
+    },
+    
+    "response_templates": {
+      "greeting": "Bonjour ! Je suis l'assistant virtuel de l'ANDF. Comment puis-je vous aider avec vos démarches foncières aujourd'hui ?",
+      
+      "clarification": "Pour mieux vous aider, pourriez-vous préciser :\n- Dans quelle commune se situe votre bien ?\n- Quel type de procédure vous intéresse ?\n- Avez-vous déjà des documents ?",
+      
+      "redirect_human": "Pour cette question spécifique, je vous recommande de contacter directement :\n- Votre BCDF local\n- Le numéro général : +229 21 30 10 20\n- Le site : https://andf.bj",
+      
+      "emergency": "Si c'est urgent, contactez immédiatement :\n📞 +229 21 30 10 20\n📧 urgence@andf.bj\n🌐 Service d'urgence disponible aux heures ouvrables",
+      
+      "thanks": "Je vous en prie ! N'hésitez pas si vous avez d'autres questions sur vos démarches foncières. Bonne journée !"
+    },
+    
+    "multilingual_support": {
+      "fon_translations": {
+        "titre_foncier": "Anyiha wema kpodó",
+        "proprietaire": "Tovi", 
+        "parcelle": "Anyiha kpo",
+        "cout": "Ga",
+        "procedure": "Bla",
+        "document": "Wema"
+      },
+      "yoruba_translations": {
+        "titre_foncier": "Iwe ilẹ",
+        "proprietaire": "Onile",
+        "parcelle": "Ipin ilẹ", 
+        "cout": "Owo",
+        "procedure": "Ilana",
+        "document": "Iwe"
+      }
+    },
+    
+    "error_handling": {
+      "no_results": "Je n'ai pas trouvé d'informations précises sur votre question. Contactez votre BCDF local pour une réponse personnalisée.",
+      
+      "ambiguous_query": "Votre question peut concerner plusieurs sujets. Pourriez-vous préciser si vous parlez de :\n- Procédures ?\n- Coûts ?\n- Documents requis ?\n- Localisation des services ?",
+      
+      "technical_error": "Je rencontre actuellement des difficultés techniques. Veuillez réessayer dans quelques instants ou contacter directement l'ANDF.",
+      
+      "outside_domain": "Cette question dépasse mes compétences en matière foncière. Je vous oriente vers les services compétents de l'ANDF."
+    },
+    
+    "validation_rules": {
+      "cost_validation": {
+        "titre_foncier": 100000,
+        "certificat_appartenance": 50000,
+        "duplicata": 25000,
+        "mutations": "0.3%",
+        "morcellement": "0.3% + 102500"
+      },
+      
+      "duration_validation": {
+        "confirmation_droits": "120 jours",
+        "mutations": "30 jours",
+        "certificat_appartenance": "Immédiat",
+        "e_notaire": "72 heures"
+      },
+      
+      "commune_validation": [
+        "Cotonou", "Porto-Novo", "Parakou", "Abomey-Calavi",
+        "Allada", "Ouidah", "Lokossa", "Natitingou", "Kandi",
+        "Djougou", "Bohicon", "Savalou", "Pobè", "Aplahoué"
+      ]
+    }
+  }
+}

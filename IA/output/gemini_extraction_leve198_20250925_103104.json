@@ -1,0 +1,55 @@
+{
+  "success": true,
+  "coordinates": [
+    {
+      "point_id": "B1",
+      "x": 415234.86,
+      "y": 717410.04,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    },
+    {
+      "point_id": "B2",
+      "x": 415253.75,
+      "y": 717407.41,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    },
+    {
+      "point_id": "B3",
+      "x": 415251.66,
+      "y": 717389.21,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    },
+    {
+      "point_id": "B4",
+      "x": 415232.51,
+      "y": 717391.66,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    }
+  ],
+  "coordinate_count": 4,
+  "ocr_text": "```json\n{\n  \"coordonnees\": [\n    {\"point\": \"B1\", \"x\": 415234.86, \"y\": 717410.04},\n    {\"point\": \"B2\", \"x\": 415253.75, \"y\": 717407.41},\n    {\"point\": \"B3\", \"x\": 415251.66, \"y\": 717389.21},\n    {\"point\": \"B4\", \"x\": 415232.51, \"y\": 717391.66}\n  ],\n  \"texte_complet\": \"COORDONNEES\\nBornes\\nX\\nY\\nB1 415234.86 717410.04\\nB2 415253.75 717407.41\\nB3 415251.66 717389.21\\nB4 415232.51 717391.66\\n457029.00\\n18.52\\nNORD\\nB1\\nB2\\n19.07\\nB4\\n19.30\\nB3\\nTITRE N°......\\nSUPERFICIE: 03a 53ca\\nImpasse de 12.00 mèt...",
+  "processing_time": 22.61203,
+  "method": "gemini_simple",
+  "image_path": "Data_Hackathon_IA_2025/Training_Data/leve198.png",
+  "timestamp": "2025-09-25T10:31:04.461252",
+  "pipeline_version": "1.0.0_gemini",
+  "features": [
+    "gemini_ocr",
+    "advanced_preprocessing",
+    "utm_validation",
+    "json_parsing",
+    "multiple_patterns"
+  ]
+}

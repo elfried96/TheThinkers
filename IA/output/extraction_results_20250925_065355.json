@@ -1,0 +1,308 @@
+{
+  "extraction_metadata": {
+    "timestamp": "2025-09-25T06:53:55.076434",
+    "extractor_version": "1.0.0",
+    "ocr_engine": "tesseract",
+    "language": "fr",
+    "confidence_threshold": 0.6,
+    "use_gpu": false,
+    "preprocessing_enabled": true
+  },
+  "extraction_statistics": {
+    "total_files": 1,
+    "successful_extractions": 1,
+    "failed_extractions": 0,
+    "total_coordinates": 8,
+    "average_coordinates_per_file": 8.0,
+    "processing_time_total": 2.25747,
+    "processing_time_average": 2.25747,
+    "file_types": {
+      "image": 1
+    },
+    "extraction_engines": {
+      "tesseract": 1
+    },
+    "quality_distribution": {
+      "high": 0,
+      "medium": 1,
+      "low": 0
+    },
+    "success_rate": 1.0
+  },
+  "results": [
+    {
+      "file_path": "Data_Hackathon_IA_2025/Training_Data/leve101.png",
+      "file_type": "image",
+      "extraction_engine": "tesseract",
+      "processing_time": 2.25747,
+      "image_processing": {
+        "original_path": "Data_Hackathon_IA_2025/Training_Data/leve101.png",
+        "processed_image": "[[255 255 255 ... 255 255 255]\n [255 255 255 ... 255 255 255]\n [255 255 255 ... 255 255 255]\n ...\n [255 255 255 ... 255 255 255]\n [255 255 255 ... 255 255 255]\n [255 255 255 ... 255 255 255]]",
+        "quality_metrics": {
+          "initial": {
+            "sharpness": 966.2240127255503,
+            "contrast": 47.38044401302308,
+            "brightness": 241.89938005110753,
+            "noise_level": 2.1520549765218653,
+            "overall_quality": 0.6424564103583517
+          },
+          "final": {
+            "sharpness": 966.2240127255503,
+            "contrast": 47.38044401302308,
+            "brightness": 241.89938005110753,
+            "noise_level": 2.1520549765218653,
+            "overall_quality": 0.6424564103583517
+          }
+        },
+        "processing_applied": [
+          "preprocessing"
+        ],
+        "rotation_corrected": 0.0,
+        "processing_success": true
+      },
+      "ocr_result": {
+        "extraction_method": "TesseractExtractor",
+        "language": "fr",
+        "confidence_threshold": 0.6,
+        "processing_time": 1.197329044342041,
+        "raw_text": "“TITRE COORDONNEES NORD Bornes Y BI 396027.30 726474.99 SURFACE 46a 66ca B2 396098.92 726433.00 B3 396069.24 726358.68 B4 396047.61 726305.55 B5 395968.92 726317.80 B6 395974.84 726357.42 726368.85 B7 395973.38 B8 395963.55 726403.42 B9 395972.67 726410.36 B1 395983.57 00 > B2 B10 B9 B7 B6 B3 PLAN DE SITUATION B5 79.63 ECHELLE: 1/500 000 B4 ohoue-Alihaÿ | Azohoue- ok Zone indiquée ECHELLE 1/1500",
+        "text_confidence": 0.898225806451613,
+        "coordinates_found": [
+          {
+            "x": 396098.92,
+            "y": 726433.0,
+            "format": "UTM",
+            "coordinate_system": "EPSG:32631",
+            "confidence": 0.8,
+            "matched_text": "B2 396098.92 726433.00",
+            "position_in_text": [
+              73,
+              95
+            ],
+            "extraction_method": "TesseractExtractor",
+            "pattern_used": "B\\d+\\s+(\\d{6,7}[\\.,]?\\d*)\\s+(\\d{6,8}[\\.,]?\\d*)"
+          },
+          {
+            "x": 396069.24,
+            "y": 726358.68,
+            "format": "UTM",
+            "coordinate_system": "EPSG:32631",
+            "confidence": 0.8,
+            "matched_text": "B3 396069.24 726358.68",
+            "position_in_text": [
+              96,
+              118
+            ],
+            "extraction_method": "TesseractExtractor",
+            "pattern_used": "B\\d+\\s+(\\d{6,7}[\\.,]?\\d*)\\s+(\\d{6,8}[\\.,]?\\d*)"
+          },
+          {
+            "x": 396047.61,
+            "y": 726305.55,
+            "format": "UTM",
+            "coordinate_system": "EPSG:32631",
+            "confidence": 0.8,
+            "matched_text": "B4 396047.61 726305.55",
+            "position_in_text": [
+              119,
+              141
+            ],
+            "extraction_method": "TesseractExtractor",
+            "pattern_used": "B\\d+\\s+(\\d{6,7}[\\.,]?\\d*)\\s+(\\d{6,8}[\\.,]?\\d*)"
+          },
+          {
+            "x": 395968.92,
+            "y": 726317.8,
+            "format": "UTM",
+            "coordinate_system": "EPSG:32631",
+            "confidence": 0.8,
+            "matched_text": "B5 395968.92 726317.80",
+            "position_in_text": [
+              142,
+              164
+            ],
+            "extraction_method": "TesseractExtractor",
+            "pattern_used": "B\\d+\\s+(\\d{6,7}[\\.,]?\\d*)\\s+(\\d{6,8}[\\.,]?\\d*)"
+          },
+          {
+            "x": 395974.84,
+            "y": 726357.42,
+            "format": "UTM",
+            "coordinate_system": "EPSG:32631",
+            "confidence": 0.8,
+            "matched_text": "B6 395974.84 726357.42",
+            "position_in_text": [
+              165,
+              187
+            ],
+            "extraction_method": "TesseractExtractor",
+            "pattern_used": "B\\d+\\s+(\\d{6,7}[\\.,]?\\d*)\\s+(\\d{6,8}[\\.,]?\\d*)"
+          },
+          {
+            "x": 395963.55,
+            "y": 726403.42,
+            "format": "UTM",
+            "coordinate_system": "EPSG:32631",
+            "confidence": 0.8,
+            "matched_text": "B8 395963.55 726403.42",
+            "position_in_text": [
+              211,
+              233
+            ],
+            "extraction_method": "TesseractExtractor",
+            "pattern_used": "B\\d+\\s+(\\d{6,7}[\\.,]?\\d*)\\s+(\\d{6,8}[\\.,]?\\d*)"
+          },
+          {
+            "x": 395972.67,
+            "y": 726410.36,
+            "format": "UTM",
+            "coordinate_system": "EPSG:32631",
+            "confidence": 0.8,
+            "matched_text": "B9 395972.67 726410.36",
+            "position_in_text": [
+              234,
+              256
+            ],
+            "extraction_method": "TesseractExtractor",
+            "pattern_used": "B\\d+\\s+(\\d{6,7}[\\.,]?\\d*)\\s+(\\d{6,8}[\\.,]?\\d*)"
+          },
+          {
+            "x": 396027.3,
+            "y": 726474.99,
+            "format": "UTM",
+            "coordinate_system": "EPSG:32631",
+            "confidence": 0.8,
+            "matched_text": "396027.30 726474.99",
+            "position_in_text": [
+              36,
+              55
+            ],
+            "extraction_method": "TesseractExtractor",
+            "pattern_used": "(\\d{3})(\\d{3})[\\.,]?(\\d{2})?\\s+(\\d{3})(\\d{3})[\\.,]?(\\d{2})?"
+          }
+        ],
+        "coordinate_count": 8,
+        "extraction_success": true,
+        "timestamp": "2025-09-25T06:53:53.878999"
+      },
+      "coordinates_found": [
+        {
+          "x": 396098.92,
+          "y": 726433.0,
+          "format": "UTM",
+          "coordinate_system": "EPSG:32631",
+          "confidence": 0.8,
+          "matched_text": "B2 396098.92 726433.00",
+          "position_in_text": [
+            73,
+            95
+          ],
+          "extraction_method": "TesseractExtractor",
+          "pattern_used": "B\\d+\\s+(\\d{6,7}[\\.,]?\\d*)\\s+(\\d{6,8}[\\.,]?\\d*)"
+        },
+        {
+          "x": 396069.24,
+          "y": 726358.68,
+          "format": "UTM",
+          "coordinate_system": "EPSG:32631",
+          "confidence": 0.8,
+          "matched_text": "B3 396069.24 726358.68",
+          "position_in_text": [
+            96,
+            118
+          ],
+          "extraction_method": "TesseractExtractor",
+          "pattern_used": "B\\d+\\s+(\\d{6,7}[\\.,]?\\d*)\\s+(\\d{6,8}[\\.,]?\\d*)"
+        },
+        {
+          "x": 396047.61,
+          "y": 726305.55,
+          "format": "UTM",
+          "coordinate_system": "EPSG:32631",
+          "confidence": 0.8,
+          "matched_text": "B4 396047.61 726305.55",
+          "position_in_text": [
+            119,
+            141
+          ],
+          "extraction_method": "TesseractExtractor",
+          "pattern_used": "B\\d+\\s+(\\d{6,7}[\\.,]?\\d*)\\s+(\\d{6,8}[\\.,]?\\d*)"
+        },
+        {
+          "x": 395968.92,
+          "y": 726317.8,
+          "format": "UTM",
+          "coordinate_system": "EPSG:32631",
+          "confidence": 0.8,
+          "matched_text": "B5 395968.92 726317.80",
+          "position_in_text": [
+            142,
+            164
+          ],
+          "extraction_method": "TesseractExtractor",
+          "pattern_used": "B\\d+\\s+(\\d{6,7}[\\.,]?\\d*)\\s+(\\d{6,8}[\\.,]?\\d*)"
+        },
+        {
+          "x": 395974.84,
+          "y": 726357.42,
+          "format": "UTM",
+          "coordinate_system": "EPSG:32631",
+          "confidence": 0.8,
+          "matched_text": "B6 395974.84 726357.42",
+          "position_in_text": [
+            165,
+            187
+          ],
+          "extraction_method": "TesseractExtractor",
+          "pattern_used": "B\\d+\\s+(\\d{6,7}[\\.,]?\\d*)\\s+(\\d{6,8}[\\.,]?\\d*)"
+        },
+        {
+          "x": 395963.55,
+          "y": 726403.42,
+          "format": "UTM",
+          "coordinate_system": "EPSG:32631",
+          "confidence": 0.8,
+          "matched_text": "B8 395963.55 726403.42",
+          "position_in_text": [
+            211,
+            233
+          ],
+          "extraction_method": "TesseractExtractor",
+          "pattern_used": "B\\d+\\s+(\\d{6,7}[\\.,]?\\d*)\\s+(\\d{6,8}[\\.,]?\\d*)"
+        },
+        {
+          "x": 395972.67,
+          "y": 726410.36,
+          "format": "UTM",
+          "coordinate_system": "EPSG:32631",
+          "confidence": 0.8,
+          "matched_text": "B9 395972.67 726410.36",
+          "position_in_text": [
+            234,
+            256
+          ],
+          "extraction_method": "TesseractExtractor",
+          "pattern_used": "B\\d+\\s+(\\d{6,7}[\\.,]?\\d*)\\s+(\\d{6,8}[\\.,]?\\d*)"
+        },
+        {
+          "x": 396027.3,
+          "y": 726474.99,
+          "format": "UTM",
+          "coordinate_system": "EPSG:32631",
+          "confidence": 0.8,
+          "matched_text": "396027.30 726474.99",
+          "position_in_text": [
+            36,
+            55
+          ],
+          "extraction_method": "TesseractExtractor",
+          "pattern_used": "(\\d{3})(\\d{3})[\\.,]?(\\d{2})?\\s+(\\d{3})(\\d{3})[\\.,]?(\\d{2})?"
+        }
+      ],
+      "coordinate_count": 8,
+      "extraction_success": true,
+      "quality_score": 0.6424564103583517,
+      "timestamp": "2025-09-25T06:53:55.076393"
+    }
+  ]
+}

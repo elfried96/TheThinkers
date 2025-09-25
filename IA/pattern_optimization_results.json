@@ -1,0 +1,866 @@
+{
+  "total_files": 15,
+  "successful_tests": 15,
+  "failed_tests": 0,
+  "average_f1_score": 0.03333333333333333,
+  "results": [
+    {
+      "filename": "leve2.jpg",
+      "status": "success",
+      "extracted_count": 0,
+      "expected_count": 8,
+      "precision": 0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "matches": [],
+      "extracted_coords": [],
+      "expected_coords": [
+        {
+          "x": 321562.2,
+          "y": 1135517.34
+        },
+        {
+          "x": 321590.39,
+          "y": 1135506.9
+        },
+        {
+          "x": 321587.21,
+          "y": 1135487.05
+        },
+        {
+          "x": 321559.04,
+          "y": 1135497.6
+        },
+        {
+          "x": 321587.21,
+          "y": 1135487.05
+        },
+        {
+          "x": 321584.02,
+          "y": 1135467.22
+        },
+        {
+          "x": 321555.89,
+          "y": 1135477.83
+        },
+        {
+          "x": 321559.04,
+          "y": 1135497.6
+        }
+      ],
+      "ocr_text": "Procédure FONCIER TITRE N°... COORDONNEES \" NORD B1 SURFACE 05a 90 SURFACE 05a /32158 321559. 9.04 11135497 60 SURFACE TOTALE : 11a 82ca COORDONNEES \" B1 22 83 1155515.00 Parcelle N°\"c\" 11355 15.00 + ..."
+    },
+    {
+      "filename": "leve12.png",
+      "status": "success",
+      "extracted_count": 0,
+      "expected_count": 4,
+      "precision": 0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "matches": [],
+      "extracted_coords": [],
+      "expected_coords": [
+        {
+          "x": 433124.59,
+          "y": 706444.25
+        },
+        {
+          "x": 433135.58,
+          "y": 706443.87
+        },
+        {
+          "x": 433135.21,
+          "y": 706417.35
+        },
+        {
+          "x": 433124.19,
+          "y": 706417.7
+        }
+      ],
+      "ocr_text": "de NORD [ SURFACE : O2a 92ca x DONNEES Bi 7061 64 B4 19] 7061 70) asso Rue n°2644 de 10.00 mêtres 100 Parcelle Parce 4 7 Bi 7 Rue n°2643 de 12,00 DE ECHELLE 17200000 195 1909 Indiquée ECHELLE : 1/500..."
+    },
+    {
+      "filename": "leve13.png",
+      "status": "success",
+      "extracted_count": 0,
+      "expected_count": 8,
+      "precision": 0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "matches": [],
+      "extracted_coords": [],
+      "expected_coords": [
+        {
+          "x": 412226.02,
+          "y": 726363.65
+        },
+        {
+          "x": 412245.72,
+          "y": 726330.51
+        },
+        {
+          "x": 412225.75,
+          "y": 726316.86
+        },
+        {
+          "x": 412213.68,
+          "y": 726308.44
+        },
+        {
+          "x": 412203.81,
+          "y": 726316.12
+        },
+        {
+          "x": 412192.31,
+          "y": 726324.67
+        },
+        {
+          "x": 412178.87,
+          "y": 726334.35
+        },
+        {
+          "x": 412203.36,
+          "y": 726353.49
+        }
+      ],
+      "ocr_text": "Procédure n LIVRE FONCIER TITRE COORDONNEES N ORD Bnes B2| 412245.72| 726330,51 B3| 412225.75| 726316.86 B4| 412213.68| 726308.44 B5| 412203.81|726316.12 SUPERFICIE: 19a 52ca B6| 412192.31| 726324.67 ..."
+    },
+    {
+      "filename": "leve14.png",
+      "status": "success",
+      "extracted_count": 0,
+      "expected_count": 15,
+      "precision": 0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "matches": [],
+      "extracted_coords": [],
+      "expected_coords": [
+        {
+          "x": 386055.75,
+          "y": 729677.93
+        },
+        {
+          "x": 386055.75,
+          "y": 729652.93
+        },
+        {
+          "x": 385958.96,
+          "y": 729687.43
+        },
+        {
+          "x": 385952.96,
+          "y": 729526.43
+        },
+        {
+          "x": 385973.96,
+          "y": 729438.43
+        },
+        {
+          "x": 385978.96,
+          "y": 729352.43
+        },
+        {
+          "x": 385809.99,
+          "y": 729328.43
+        },
+        {
+          "x": 385826.55,
+          "y": 729269.88
+        },
+        {
+          "x": 385689.99,
+          "y": 729220.95
+        },
+        {
+          "x": 385675.99,
+          "y": 729385.03
+        },
+        {
+          "x": 385661.96,
+          "y": 729549.43
+        },
+        {
+          "x": 385677.96,
+          "y": 729641.43
+        },
+        {
+          "x": 385705.96,
+          "y": 729638.43
+        },
+        {
+          "x": 385796.96,
+          "y": 729604.43
+        },
+        {
+          "x": 385886.96,
+          "y": 729608.43
+        }
+      ],
+      "ocr_text": "Procédure N° REGISTRE FONCIER TITRE N° SURFACE :10ha NORD | | sol a COUFFONOU | 729646.00 —| sans de $ eut 810 72824500 Zone indiquée ECHELLE..."
+    },
+    {
+      "filename": "leve16.png",
+      "status": "success",
+      "extracted_count": 0,
+      "expected_count": 8,
+      "precision": 0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "matches": [],
+      "extracted_coords": [],
+      "expected_coords": [
+        {
+          "x": 404310.71,
+          "y": 719234.62
+        },
+        {
+          "x": 404367.71,
+          "y": 719176.46
+        },
+        {
+          "x": 404420.57,
+          "y": 719101.99
+        },
+        {
+          "x": 404396.47,
+          "y": 719084.98
+        },
+        {
+          "x": 404356.0,
+          "y": 719056.0
+        },
+        {
+          "x": 404290.53,
+          "y": 719129.59
+        },
+        {
+          "x": 404225.71,
+          "y": 719179.25
+        },
+        {
+          "x": 404293.64,
+          "y": 719224.03
+        }
+      ],
+      "ocr_text": "T NonD Forme SURFACE : 56a 07ca 404200.69 404203.04 DES à w. a ECHELLE : 1/1500..."
+    },
+    {
+      "filename": "leve18.png",
+      "status": "success",
+      "extracted_count": 0,
+      "expected_count": 6,
+      "precision": 0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "matches": [],
+      "extracted_coords": [],
+      "expected_coords": [
+        {
+          "x": 413142.6,
+          "y": 702606.35
+        },
+        {
+          "x": 413156.87,
+          "y": 702467.08
+        },
+        {
+          "x": 413171.5,
+          "y": 702324.81
+        },
+        {
+          "x": 413136.13,
+          "y": 702321.1
+        },
+        {
+          "x": 413121.92,
+          "y": 702459.05
+        },
+        {
+          "x": 413107.57,
+          "y": 702598.31
+        }
+      ],
+      "ocr_text": "REGISTRE FONCIER| TITRE N° COORDONNEES. NORD B1 82 B4 SURFACE : 00a OOca 85 31 Te 70256000 85 702360.00—| 3857 Zone SN \\ \\ ILE 1 1 ECHELLE + 1/2000..."
+    },
+    {
+      "filename": "leve17.png",
+      "status": "success",
+      "extracted_count": 0,
+      "expected_count": 7,
+      "precision": 0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "matches": [],
+      "extracted_coords": [],
+      "expected_coords": [
+        {
+          "x": 413163.65,
+          "y": 702611.18
+        },
+        {
+          "x": 413177.4,
+          "y": 702610.95
+        },
+        {
+          "x": 413191.77,
+          "y": 702471.69
+        },
+        {
+          "x": 413206.54,
+          "y": 702328.49
+        },
+        {
+          "x": 413171.5,
+          "y": 702324.81
+        },
+        {
+          "x": 413156.91,
+          "y": 702467.08
+        },
+        {
+          "x": 413142.6,
+          "y": 702606.35
+        }
+      ],
+      "ocr_text": "TITRE N° NORD x 82 B4 SURFACE 85 00a 00 mêtres 86 6081 13. + 86 | 3515 Zone Indiquéo 1 | \\..."
+    },
+    {
+      "filename": "leve19.png",
+      "status": "success",
+      "extracted_count": 0,
+      "expected_count": 4,
+      "precision": 0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "matches": [],
+      "extracted_coords": [],
+      "expected_coords": [
+        {
+          "x": 401374.38,
+          "y": 712334.71
+        },
+        {
+          "x": 401378.12,
+          "y": 712287.17
+        },
+        {
+          "x": 401353.24,
+          "y": 712284.56
+        },
+        {
+          "x": 401349.45,
+          "y": 712332.75
+        }
+      ],
+      "ocr_text": "Procédure N°. TITRE N° Livre Foncier COORDONNEES NORD x Bi 12a O0ca B2 o1378.12 Ba 45 N°24 2502 Domaine IRSP Al Terrain “indiqué ECHELLE: 1/500..."
+    },
+    {
+      "filename": "leve20.png",
+      "status": "success",
+      "extracted_count": 0,
+      "expected_count": 4,
+      "precision": 0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "matches": [],
+      "extracted_coords": [],
+      "expected_coords": [
+        {
+          "x": 419580.61,
+          "y": 705951.75
+        },
+        {
+          "x": 419601.63,
+          "y": 705950.92
+        },
+        {
+          "x": 419600.42,
+          "y": 705926.0
+        },
+        {
+          "x": 419579.64,
+          "y": 705926.81
+        }
+      ],
+      "ocr_text": "D — + 2 le Va de 1800 mes :..."
+    },
+    {
+      "filename": "leve21.png",
+      "status": "success",
+      "extracted_count": 0,
+      "expected_count": 23,
+      "precision": 0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "matches": [],
+      "extracted_coords": [],
+      "expected_coords": [
+        {
+          "x": 451570.19,
+          "y": 727348.97
+        },
+        {
+          "x": 451634.59,
+          "y": 727319.49
+        },
+        {
+          "x": 451609.91,
+          "y": 727274.92
+        },
+        {
+          "x": 451591.75,
+          "y": 727278.65
+        },
+        {
+          "x": 451587.01,
+          "y": 727246.49
+        },
+        {
+          "x": 451581.06,
+          "y": 727222.88
+        },
+        {
+          "x": 451567.02,
+          "y": 727233.35
+        },
+        {
+          "x": 451542.8,
+          "y": 727247.9
+        },
+        {
+          "x": 451544.29,
+          "y": 727255.01
+        },
+        {
+          "x": 451548.45,
+          "y": 727272.35
+        },
+        {
+          "x": 451553.29,
+          "y": 727295.65
+        },
+        {
+          "x": 451563.62,
+          "y": 727332.79
+        },
+        {
+          "x": 451553.29,
+          "y": 727295.65
+        },
+        {
+          "x": 451584.73,
+          "y": 727279.19
+        },
+        {
+          "x": 451601.54,
+          "y": 727278.05
+        },
+        {
+          "x": 451609.91,
+          "y": 727274.92
+        },
+        {
+          "x": 451647.7,
+          "y": 727258.46
+        },
+        {
+          "x": 451636.79,
+          "y": 727231.92
+        },
+        {
+          "x": 451615.7,
+          "y": 727197.05
+        },
+        {
+          "x": 451567.02,
+          "y": 727233.35
+        },
+        {
+          "x": 451542.8,
+          "y": 727247.9
+        },
+        {
+          "x": 451544.29,
+          "y": 727255.01
+        },
+        {
+          "x": 451548.42,
+          "y": 727272.22
+        }
+      ],
+      "ocr_text": "PLAN D'EXPERTISE JUDICIAIRE NORD COORDONNEES B SUPERFICIE : 58a 23ca X Y SUPERFICIE : 54a 57ca B1 SUPERFICIE : 21a 69ca B2 SU Len, B3 451609.91|727274.92 B4 451591.75/727278.65 B5 451587.01|727246.49 ..."
+    },
+    {
+      "filename": "leve73.png",
+      "status": "success",
+      "extracted_count": 0,
+      "expected_count": 5,
+      "precision": 0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "matches": [],
+      "extracted_coords": [],
+      "expected_coords": [
+        {
+          "x": 461635.1,
+          "y": 717068.72
+        },
+        {
+          "x": 461648.89,
+          "y": 717068.17
+        },
+        {
+          "x": 461650.71,
+          "y": 717064.43
+        },
+        {
+          "x": 461650.71,
+          "y": 717047.07
+        },
+        {
+          "x": 461623.97,
+          "y": 717047.07
+        }
+      ],
+      "ocr_text": "TITRE Bnes SURFACE : 50ca X Y B1 461635.10 717068.72 B2 461648.89 717068.17 B3 461650.71 717064.43 461650.71 717047.07 B4 B5 461623.97 717047.07 — — — vers vers OUIDAH Axe de la RNIE n°1 vers COTONOU ..."
+    },
+    {
+      "filename": "leve74.png",
+      "status": "success",
+      "extracted_count": 0,
+      "expected_count": 22,
+      "precision": 0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "matches": [],
+      "extracted_coords": [],
+      "expected_coords": [
+        {
+          "x": 380553.47,
+          "y": 747683.2
+        },
+        {
+          "x": 380677.33,
+          "y": 747640.18
+        },
+        {
+          "x": 380717.87,
+          "y": 747637.99
+        },
+        {
+          "x": 380749.16,
+          "y": 747629.25
+        },
+        {
+          "x": 380799.65,
+          "y": 747605.74
+        },
+        {
+          "x": 380826.82,
+          "y": 747592.29
+        },
+        {
+          "x": 380944.52,
+          "y": 747573.62
+        },
+        {
+          "x": 380940.46,
+          "y": 747566.98
+        },
+        {
+          "x": 380910.95,
+          "y": 747549.7
+        },
+        {
+          "x": 380856.38,
+          "y": 747527.05
+        },
+        {
+          "x": 380790.38,
+          "y": 747491.15
+        },
+        {
+          "x": 380718.14,
+          "y": 747454.65
+        },
+        {
+          "x": 380608.46,
+          "y": 747354.91
+        },
+        {
+          "x": 380572.85,
+          "y": 747366.89
+        },
+        {
+          "x": 380536.15,
+          "y": 747387.74
+        },
+        {
+          "x": 380520.96,
+          "y": 747395.01
+        },
+        {
+          "x": 380420.06,
+          "y": 747447.86
+        },
+        {
+          "x": 380431.05,
+          "y": 747457.37
+        },
+        {
+          "x": 380446.2,
+          "y": 747469.25
+        },
+        {
+          "x": 380581.05,
+          "y": 747472.42
+        },
+        {
+          "x": 380666.49,
+          "y": 747541.82
+        },
+        {
+          "x": 380536.1,
+          "y": 747663.58
+        }
+      ],
+      "ocr_text": "x NORD SURFACE B3ca 87 | 1e w 320940 46 727849 70) 747670.00— = x LE se 6) ss 4 36062008 Ha 39042008 00) D 20 820 390666 40 82 36083810 PLAN DE 237 ECHELLE 1/600 000 — 2 nue ECHELLE 1/3000..."
+    },
+    {
+      "filename": "leve79.png",
+      "status": "success",
+      "extracted_count": 3,
+      "expected_count": 5,
+      "precision": 0.6666666666666666,
+      "recall": 0.4,
+      "f1_score": 0.5,
+      "matches": [
+        [
+          {
+            "x": 415544.18,
+            "y": 732676.01,
+            "format": "UTM",
+            "coordinate_system": "EPSG:32631",
+            "confidence": 0.8,
+            "matched_text": "415544.18 |732676.01",
+            "position_in_text": [
+              59,
+              79
+            ],
+            "extraction_method": "TesseractExtractor",
+            "pattern_used": "(\\d{6,7}[\\.,]?\\d*)\\s*[/|]\\s*(\\d{6,8}[\\.,]?\\d*)"
+          },
+          {
+            "x": 415544.18,
+            "y": 732676.01
+          }
+        ],
+        [
+          {
+            "x": 415534.91,
+            "y": 732661.18,
+            "format": "UTM",
+            "coordinate_system": "EPSG:32631",
+            "confidence": 0.8,
+            "matched_text": "B4 415534.91 732661.18",
+            "position_in_text": [
+              104,
+              126
+            ],
+            "extraction_method": "TesseractExtractor",
+            "pattern_used": "([A-Z][0-9]+\\s+)?(\\d{6,7}[\\.,]?\\d*)[\\s|]*(\\d{6,8}[\\.,]?\\d*)"
+          },
+          {
+            "x": 415534.91,
+            "y": 732661.18
+          }
+        ]
+      ],
+      "extracted_coords": [
+        {
+          "x": 415516.23,
+          "y": 732887.18,
+          "format": "UTM",
+          "coordinate_system": "EPSG:32631",
+          "confidence": 0.8,
+          "matched_text": "415516.23 |732887.18",
+          "position_in_text": [
+            35,
+            55
+          ],
+          "extraction_method": "TesseractExtractor",
+          "pattern_used": "(\\d{6,7}[\\.,]?\\d*)\\s*[/|]\\s*(\\d{6,8}[\\.,]?\\d*)"
+        },
+        {
+          "x": 415544.18,
+          "y": 732676.01,
+          "format": "UTM",
+          "coordinate_system": "EPSG:32631",
+          "confidence": 0.8,
+          "matched_text": "415544.18 |732676.01",
+          "position_in_text": [
+            59,
+            79
+          ],
+          "extraction_method": "TesseractExtractor",
+          "pattern_used": "(\\d{6,7}[\\.,]?\\d*)\\s*[/|]\\s*(\\d{6,8}[\\.,]?\\d*)"
+        },
+        {
+          "x": 415534.91,
+          "y": 732661.18,
+          "format": "UTM",
+          "coordinate_system": "EPSG:32631",
+          "confidence": 0.8,
+          "matched_text": "B4 415534.91 732661.18",
+          "position_in_text": [
+            104,
+            126
+          ],
+          "extraction_method": "TesseractExtractor",
+          "pattern_used": "([A-Z][0-9]+\\s+)?(\\d{6,7}[\\.,]?\\d*)[\\s|]*(\\d{6,8}[\\.,]?\\d*)"
+        }
+      ],
+      "expected_coords": [
+        {
+          "x": 415516.23,
+          "y": 732687.16
+        },
+        {
+          "x": 415544.18,
+          "y": 732676.01
+        },
+        {
+          "x": 415541.6,
+          "y": 732671.25
+        },
+        {
+          "x": 415534.91,
+          "y": 732661.18
+        },
+        {
+          "x": 415506.83,
+          "y": 732671.8
+        }
+      ],
+      "ocr_text": "TITRE N° NORD SURFACE :05a 27ca B1 415516.23 |732887.18 B2 415544.18 |732676.01 B3 415541.60 |732671.25 B4 415534.91 732661.18 732965.00 + w B3 B5 30 01 ECHELLE : 1/500.000 732915.00 ogo OUR #1 Togo: ..."
+    },
+    {
+      "filename": "leve81.png",
+      "status": "success",
+      "extracted_count": 0,
+      "expected_count": 4,
+      "precision": 0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "matches": [],
+      "extracted_coords": [],
+      "expected_coords": [
+        {
+          "x": 452965.03,
+          "y": 704873.48
+        },
+        {
+          "x": 452967.13,
+          "y": 704851.58
+        },
+        {
+          "x": 452946.23,
+          "y": 704849.57
+        },
+        {
+          "x": 452944.12,
+          "y": 704871.47
+        }
+      ],
+      "ocr_text": "TITRE N°__ COORDONNEES NORD SUPERFICIE : 04a 62ca 3 00 co ECHELLE : 1/500..."
+    },
+    {
+      "filename": "leve82.png",
+      "status": "success",
+      "extracted_count": 0,
+      "expected_count": 18,
+      "precision": 0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "matches": [],
+      "extracted_coords": [],
+      "expected_coords": [
+        {
+          "x": 401976.35,
+          "y": 706569.8
+        },
+        {
+          "x": 401985.14,
+          "y": 706564.6
+        },
+        {
+          "x": 402122.44,
+          "y": 706544.52
+        },
+        {
+          "x": 402135.07,
+          "y": 706533.47
+        },
+        {
+          "x": 402096.33,
+          "y": 706416.29
+        },
+        {
+          "x": 401985.1,
+          "y": 706354.47
+        },
+        {
+          "x": 401829.83,
+          "y": 706339.44
+        },
+        {
+          "x": 401695.66,
+          "y": 706316.01
+        },
+        {
+          "x": 401643.64,
+          "y": 706405.53
+        },
+        {
+          "x": 401669.84,
+          "y": 706522.49
+        },
+        {
+          "x": 401904.25,
+          "y": 706542.94
+        },
+        {
+          "x": 401933.77,
+          "y": 706562.56
+        },
+        {
+          "x": 401843.29,
+          "y": 706483.11
+        },
+        {
+          "x": 401820.66,
+          "y": 706334.85
+        },
+        {
+          "x": 401620.66,
+          "y": 706255.7
+        },
+        {
+          "x": 401759.77,
+          "y": 706346.17
+        },
+        {
+          "x": 401707.08,
+          "y": 706385.51
+        },
+        {
+          "x": 401795.51,
+          "y": 706397.77
+        }
+      ],
+      "ocr_text": "..."
+    }
+  ]
+}

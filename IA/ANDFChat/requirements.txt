@@ -1,0 +1,61 @@
+# ANDF Chatbot Backend Requirements
+# =================================
+
+# Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# RAG System Dependencies
+chromadb==0.4.18
+sentence-transformers==2.2.2
+transformers==4.36.0
+
+# ML & NLP Libraries
+torch==2.1.0
+numpy==1.24.3
+scikit-learn==1.3.2
+
+# Text Processing
+nltk==3.8.1
+spacy==3.7.2
+
+# Data Handling
+pandas==2.1.3
+pydantic==2.5.0
+
+# HTTP & API
+httpx==0.25.2
+requests==2.31.0
+
+# Async Support
+asyncio-throttle==1.0.2
+aiofiles==23.2.1
+
+# Database & Storage
+sqlite3
+json5==0.9.14
+
+# Utilities
+python-dotenv==1.0.0
+python-multipart==0.0.6
+python-jose[cryptography]==3.3.0
+
+# Logging & Monitoring
+loguru==0.7.2
+
+# Development & Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.11.0
+flake8==6.1.0
+
+# Security
+bcrypt==4.1.2
+python-dateutil==2.8.2
+
+# Optional: GPU support (uncomment if using CUDA)
+# torch-audio==2.1.0
+# torchaudio==2.1.0
+
+# French language model for spaCy (install with: python -m spacy download fr_core_news_sm)
+# Note: This needs to be installed separately

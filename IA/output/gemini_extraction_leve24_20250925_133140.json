@@ -1,0 +1,55 @@
+{
+  "success": true,
+  "coordinates": [
+    {
+      "point_id": "B1",
+      "x": 401344.03,
+      "y": 712401.54,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    },
+    {
+      "point_id": "B2",
+      "x": 401347.82,
+      "y": 712353.35,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    },
+    {
+      "point_id": "B3",
+      "x": 401322.94,
+      "y": 712350.74,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    },
+    {
+      "point_id": "B4",
+      "x": 401319.1,
+      "y": 712399.58,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    }
+  ],
+  "coordinate_count": 4,
+  "ocr_text": "Voici la réponse au format JSON demandé :\n\n```json\n{\n  \"coordonnees\": [\n    {\"point\": \"B1\", \"x\": 401344.03, \"y\": 712401.54},\n    {\"point\": \"B2\", \"x\": 401347.82, \"y\": 712353.35},\n    {\"point\": \"B3\", \"x\": 401322.94, \"y\": 712350.74},\n    {\"point\": \"B4\", \"x\": 401319.10, \"y\": 712399.58}\n  ],\n  \"texte_complet\": \"COORDONNEES\\nBornes\\tX\\tY\\nB1\\t401344.03\\t712401.54\\nB2\\t401347.82\\t712353.35\\nB3\\t401322.94\\t712350.74\\nB4\\t401319.10\\t712399.58\\nNORD\\nN°19\\tSuperficie: 12a 17ca\\n712400.79\\n25.01\\n48.99\\nPa...",
+  "processing_time": 19.381157,
+  "method": "gemini_simple",
+  "image_path": "Data_Hackathon_IA_2025/Testing_Data/leve24.png",
+  "timestamp": "2025-09-25T13:31:40.284335",
+  "pipeline_version": "1.0.0_gemini",
+  "features": [
+    "gemini_ocr",
+    "advanced_preprocessing",
+    "utm_validation",
+    "json_parsing",
+    "multiple_patterns"
+  ]
+}

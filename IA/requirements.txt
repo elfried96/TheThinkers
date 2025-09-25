@@ -1,0 +1,31 @@
+# Extracteur de Coordonnées - Dépendances
+# =====================================
+
+# OCR Engines
+paddleocr>=2.7.0           # PaddleOCR pour extraction texte avancée
+pytesseract>=0.3.10        # Interface Python pour Tesseract
+
+# Traitement d'images
+opencv-python>=4.8.0       # OpenCV pour preprocessing
+pillow>=10.0.0             # PIL pour manipulation images
+numpy>=1.24.0              # Calculs numériques
+
+# Traitement PDF
+pdfplumber>=0.10.0         # Extraction texte et métadonnées PDF
+
+# Machine Learning (optionnel, pour PaddleOCR optimisé)
+torch>=2.0.0               # Backend PyTorch (CPU/GPU)
+torchvision>=0.15.0        # Vision par ordinateur
+
+# Utilitaires
+pathlib2>=2.3.7           # Manipulation chemins (Python < 3.4)
+regex>=2023.10.3           # Regex avancées
+typing-extensions>=4.5.0   # Extensions typing
+
+# Logging et configuration
+python-dateutil>=2.8.0    # Manipulation dates
+pytz>=2023.3              # Gestion fuseaux horaires
+
+# Tests et validation (développement)
+pytest>=7.0.0             # Framework de tests
+pytest-cov>=4.0.0         # Couverture de tests

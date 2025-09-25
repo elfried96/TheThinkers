@@ -1,0 +1,18 @@
+{
+  "success": false,
+  "coordinates": [],
+  "coordinate_count": 0,
+  "ocr_text": "```json\n{\n  \"coordonnees\": [\n    {\"point\": \"B1\", \"x\": 102119.16, \"y\": 725732.20},\n    {\"point\": \"B2\", \"x\": 102145.45, \"y\": 725724.49},\n    {\"point\": \"B3\", \"x\": 102156.09, \"y\": 725707.09},\n    {\"point\": \"B4\", \"x\": 102182.57, \"y\": 725656.02},\n    {\"point\": \"B5\", \"x\": 102172.81, \"y\": 725638.35},\n    {\"point\": \"B6\", \"x\": 102169.67, \"y\": 725596.19},\n    {\"point\": \"B7\", \"x\": 102113.55, \"y\": 725592.25},\n    {\"point\": \"B8\", \"x\": 102053.18, \"y\": 725635.13}\n  ],\n  \"texte_complet\": \"COORDONNEES\\nBorne\\nX\\n...",
+  "processing_time": 14.708212,
+  "method": "gemini_simple",
+  "image_path": "Data_Hackathon_IA_2025/Training_Data/leve102.png",
+  "timestamp": "2025-09-25T13:55:14.401884",
+  "pipeline_version": "1.0.0_gemini",
+  "features": [
+    "gemini_ocr",
+    "advanced_preprocessing",
+    "utm_validation",
+    "json_parsing",
+    "multiple_patterns"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "extraction_metadata": {
+    "timestamp": "2025-09-25T06:40:15.648989",
+    "extractor_version": "1.0.0",
+    "ocr_engine": "tesseract",
+    "language": "fr",
+    "confidence_threshold": 0.6,
+    "use_gpu": false,
+    "preprocessing_enabled": true
+  },
+  "extraction_statistics": {
+    "total_files": 1,
+    "successful_extractions": 0,
+    "failed_extractions": 1,
+    "total_coordinates": 0,
+    "average_coordinates_per_file": 0.0,
+    "processing_time_total": 0.638349,
+    "processing_time_average": 0.638349,
+    "file_types": {
+      "image": 1
+    },
+    "extraction_engines": {
+      "tesseract": 1
+    },
+    "quality_distribution": {
+      "high": 0,
+      "medium": 1,
+      "low": 0
+    },
+    "success_rate": 0.0
+  },
+  "results": [
+    {
+      "file_path": "Data_Hackathon_IA_2025/Training_Data/leve12.png",
+      "file_type": "image",
+      "extraction_engine": "tesseract",
+      "processing_time": 0.638349,
+      "image_processing": {
+        "original_path": "Data_Hackathon_IA_2025/Training_Data/leve12.png",
+        "processed_image": "[[255 255 255 ... 229 229 229]\n [255 255 255 ... 229 229 229]\n [255 255 255 ... 229 229 229]\n ...\n [255 255 255 ... 255 255 255]\n [255 255 255 ... 255 255 255]\n [255 255 255 ... 255 255 255]]",
+        "quality_metrics": {
+          "initial": {
+            "sharpness": 3860.564340409831,
+            "contrast": 49.70376678641653,
+            "brightness": 237.72300825866714,
+            "noise_level": 7.789441290351459,
+            "overall_quality": 0.6435865930582105
+          },
+          "final": {
+            "sharpness": 2938.2180494159825,
+            "contrast": 49.885096931992194,
+            "brightness": 237.09164748718322,
+            "noise_level": 6.938926609989336,
+            "overall_quality": 0.6485269111478567
+          }
+        },
+        "processing_applied": [
+          "preprocessing",
+          "rotation_correction"
+        ],
+        "rotation_corrected": 2.0,
+        "processing_success": true
+      },
+      "ocr_result": {
+        "extraction_method": "TesseractExtractor",
+        "language": "fr",
+        "confidence_threshold": 0.6,
+        "processing_time": 0.4437825679779053,
+        "raw_text": "de NORD SURFACE : 92ca x DONNEES Bi 7061 B4 19] 7061 Rue n°2644 de 10.00 mêtres Parcelle 4 7 7 Rue de 12,00 DE ECHELLE 17200000 195 1909 Indiquée ECHELLE : 1/500",
+        "text_confidence": 0.8254545454545454,
+        "coordinates_found": [],
+        "coordinate_count": 0,
+        "extraction_success": false,
+        "timestamp": "2025-09-25T06:40:15.205144"
+      },
+      "coordinates_found": [],
+      "coordinate_count": 0,
+      "extraction_success": false,
+      "quality_score": 0.6485269111478567,
+      "timestamp": "2025-09-25T06:40:15.648961"
+    }
+  ]
+}

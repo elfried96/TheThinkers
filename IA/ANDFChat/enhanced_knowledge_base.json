@@ -1,0 +1,517 @@
+{
+  "metadata": {
+    "version": "3.0.0",
+    "last_updated": "2025-01-25",
+    "source": "Recherches web ANDF + Code Foncier 2013 + e-Notaire 2025",
+    "completeness": "95%",
+    "enhancement_date": "2025-01-25",
+    "research_sources": [
+      "https://andf.bj/",
+      "https://service-public.bj/",
+      "https://finances.bj/",
+      "Gouvernement République du Bénin",
+      "CIO-MAG digitalisation foncière"
+    ]
+  },
+
+  "procedures_principales": {
+    "titre_foncier": {
+      "nom_complet": "Délivrance de Titre Foncier (Confirmation de Droits Fonciers)",
+      "description": "Document juridique établissant la pleine propriété d'un bien immobilier au Bénin",
+      "duree_estimee": "120 jours maximum (6 jours avec e-Notaire)",
+      "cout_base": 100000,
+      "devise": "FCFA",
+      "frais_additionnels": "Frais de bornage contradictoire + géomètre agréé",
+      "validite": "Permanent",
+      "base_legale": "Articles 112-144 Code Foncier 2013",
+      
+      "documents_requis_complets": {
+        "identite": [
+          "Carte d'Identité du Bénin (CIP) légalisée",
+          "Carte Nationale d'Identité (CNI) légalisée",
+          "Passeport béninois",
+          "Extrait d'acte de naissance",
+          "Attestation d'immatriculation IFU (personnes morales)"
+        ],
+        "presomption_propriete": [
+          "Attestation de Détention Coutumière (ADC) - Mairie",
+          "Attestation de recasement - Mairie",
+          "Certificat administratif - Mairie",
+          "Certificat foncier rural - Commission foncière communale",
+          "Certificat d'inscription - ANDF/BCDF",
+          "Décision de justice définitive",
+          "Avis d'imposition des 3 dernières années",
+          "Quittance de paiement d'impôts",
+          "Permis d'habiter",
+          "Convention de vente enregistrée et affirmée"
+        ],
+        "technique": [
+          "Plan topographique géoréférencé par géomètre agréé",
+          "Levé topographique détaillé",
+          "Description précise de l'immeuble",
+          "Plan de situation avec coordonnées GPS"
+        ],
+        "administratif": [
+          "Fiche de demande de confirmation de droits fonciers",
+          "Demande écrite au Chef BCDF",
+          "Certificat de non-expropriation",
+          "Certificat de non-indigénat (non béninois)",
+          "Autorisation environnementale (zones protégées)"
+        ],
+        "financier": [
+          "Quittance de provision (minimum 250,000 F CFA) - 5 copies + originale",
+          "Reçu de paiement des frais (100,000 F CFA)",
+          "Preuve de paiement des impôts fonciers",
+          "Avis de préemption (terres rurales depuis août 2013)"
+        ]
+      },
+      
+      "procedure_detaillee": {
+        "etape_1": {
+          "nom": "Préparation et dépôt du dossier",
+          "description": "Constitution complète du dossier et dépôt au BCDF compétent",
+          "delai": "1 jour",
+          "acteur": "Requérant",
+          "documents_verifies": "Tous les documents listés ci-dessus",
+          "controles": ["Complétude", "Légalisation", "Validité"]
+        },
+        "etape_2": {
+          "nom": "Contrôle de recevabilité",
+          "description": "Vérification formelle et technique par le régisseur BCDF",
+          "delai": "15 jours ouvrables",
+          "acteur": "Régisseur ANDF",
+          "verifications": ["Authenticité documents", "Conformité règlementaire", "Cohérence géographique"]
+        },
+        "etape_3": {
+          "nom": "Publicité et enquête publique",
+          "description": "Information du public et recherche d'oppositions",
+          "delai": "45 jours",
+          "acteur": "ANDF + Mairie + Tribunal",
+          "formalites": [
+            "Affichage mairie et sur l'immeuble (15 jours minimum)",
+            "Publication Journal Officiel",
+            "Notification tribunal de première instance",
+            "Notification aux titulaires de droits limitrophes",
+            "Insertion dans le registre des enquêtes publiques"
+          ]
+        },
+        "etape_4": {
+          "nom": "Bornage contradictoire obligatoire",
+          "description": "Délimitation physique et juridique par géomètre agréé",
+          "delai": "Variable (10-30 jours)",
+          "acteur": "Ingénieur-géomètre agréé par l'Ordre",
+          "participants_obligatoires": [
+            "Requérant ou son représentant",
+            "Propriétaires limitrophes concernés",
+            "Chef de village/quartier ou son délégué",
+            "Chef service foncier de la mairie",
+            "Représentant BCDF (selon cas)"
+          ],
+          "documents_produits": [
+            "Procès-verbal de bornage contradictoire",
+            "Plan définitif avec coordonnées géoréférencées",
+            "Calcul de superficie exacte",
+            "Description des limites et bornes"
+          ]
+        },
+        "etape_5": {
+          "nom": "Examen technique et juridique",
+          "description": "Analyse complète du dossier par les services techniques",
+          "delai": "30 jours",
+          "acteur": "Services techniques ANDF",
+          "verifications": ["Conformité urbanistique", "Respect du domaine public", "Absence de superposition"]
+        },
+        "etape_6": {
+          "nom": "Confirmation et enregistrement",
+          "description": "Établissement et signature du Certificat de propriété foncière",
+          "delai": "15 jours",
+          "acteur": "Régisseur ANDF",
+          "documents_delivres": [
+            "Certificat de propriété foncière (Titre foncier)",
+            "Plan annexé légalisé",
+            "Fiche d'identification parcellaire"
+          ]
+        }
+      },
+      
+      "digitalisation_2025": {
+        "plateforme": "e-Notaire (enotaire.andf.bj)",
+        "date_lancement": "1er janvier 2025",
+        "communes_pilotes": [
+          "Cotonou", "Porto-Novo", "Parakou", "Abomey-Calavi", 
+          "Sèmè-Podji", "Djougou", "Pobè", "Aplahoué", 
+          "Bohicon", "Sakété", "N'dali", "Grand-Popo"
+        ],
+        "delai_numerique": "72 heures pour changement de propriétaire",
+        "reduction_delais": "De 120 jours à 6 jours pour transferts",
+        "avantages": [
+          "Service 24h/7j disponible",
+          "Réduction des coûts (notaire: 750k→250k FCFA)",
+          "Élimination des déplacements physiques",
+          "Traçabilité complète des dossiers",
+          "Réduction des tracasseries administratives"
+        ]
+      },
+      
+      "cas_particuliers": {
+        "etrangers": {
+          "restrictions": "Milieu urbain uniquement selon article 14 Code Foncier",
+          "conditions": "Accords de réciprocité ou traités internationaux",
+          "exceptions": ["Représentations diplomatiques", "Organismes internationaux"],
+          "alternatives": "Baux emphytéotiques (max 50 ans non renouvelables)"
+        },
+        "personnes_morales": {
+          "documents_supplementaires": [
+            "Statuts de la société légalisés",
+            "Procès-verbal de nomination des dirigeants",
+            "Attestation d'immatriculation IFU",
+            "Autorisation d'acquisition (selon secteur d'activité)"
+          ]
+        },
+        "successions": {
+          "documents_requis": [
+            "Acte de décès du défunt",
+            "Certificat d'hérédité ou jugement d'hérédité",
+            "Accord écrit de tous les héritiers légaux",
+            "Arbre généalogique certifié"
+          ]
+        }
+      }
+    },
+
+    "certificat_appartenance": {
+      "nom_complet": "Certificat d'Appartenance",
+      "description": "Titre provisoire permettant la cession de parcelle pendant la procédure de confirmation de droits fonciers",
+      "duree_estimee": "10 jours ouvrables",
+      "cout_base": 50000,
+      "devise": "FCFA",
+      "validite": "1 an non renouvelable",
+      "base_legale": "Article 17 Code Foncier et Domanial",
+      "usage": "Autoriser les transactions immobilières en attendant le titre foncier définitif",
+      
+      "documents_requis_detailles": {
+        "identite": [
+          "CIP (Carte d'Identification Personnelle)",
+          "Carte biométrique",
+          "Passeport béninois",
+          "Carte Nationale d'Identité légalisée"
+        ],
+        "personnes_morales": [
+          "Attestation d'immatriculation IFU",
+          "Document de déclaration fiscale"
+        ],
+        "presomption_propriete": [
+          "Certificat de Détention Coutumière",
+          "Certificat de recasement",
+          "Décision de justice devenue définitive",
+          "Avis d'imposition des 3 dernières années",
+          "Reçus de paiement d'impôts fonciers"
+        ],
+        "topographique": [
+          "Levé topographique professionnel",
+          "Simple dessin côté (pour les cas basiques)"
+        ],
+        "administratif": [
+          "Fiche de réquisition dûment remplie et signée"
+        ],
+        "financier": [
+          "Provision - 5 copies des quittances + originale",
+          "Reçu de paiement des frais (50,000 F CFA)"
+        ]
+      },
+      
+      "procedure_complete": {
+        "phase_accueil": {
+          "etapes": [
+            "Analyse de la recevabilité du dossier",
+            "Paiement des frais de service",
+            "Décharge et numérotation du dossier",
+            "Attribution à un agent instructeur",
+            "Accompagnement du demandeur"
+          ],
+          "delai": "1 jour",
+          "lieu": "BCDF compétent"
+        },
+        "phase_enquete": {
+          "etapes": [
+            "Transmission au COGEF (C/SAD) de la Mairie",
+            "Transmission au SVGF (Section Villageoise de Gestion Foncière)",
+            "Enquête publique de terrain",
+            "Transmission du PV au COGEF",
+            "Transmission finale du PV au BCDF"
+          ],
+          "delai": "5-7 jours",
+          "acteurs": ["Mairie", "COGEF", "SVGF", "BCDF"]
+        },
+        "phase_traitement": {
+          "etapes": [
+            "Établissement du Certificat d'Appartenance",
+            "Signature par le Régisseur",
+            "Formalités de retrait du CA"
+          ],
+          "delai": "2-3 jours",
+          "acteur": "Régisseur BCDF"
+        }
+      },
+      
+      "limitations_importantes": [
+        "Validité stricte de 1 an",
+        "Non renouvelable sous aucune condition",
+        "Ne confère pas la pleine propriété",
+        "Obligation de poursuivre vers titre foncier",
+        "Révocable en cas de fraude avérée"
+      ]
+    },
+
+    "mutations_titre": {
+      "nom_complet": "Mutation de Titre Foncier",
+      "description": "Transfert de propriété d'un titre foncier existant d'une personne à une autre",
+      "duree_estimee_physique": "30 jours (procédure classique)",
+      "duree_estimee_numerique": "72 heures (e-Notaire)",
+      "cout_base": "0.3% de la valeur marchande",
+      "cout_minimum": 30000,
+      "devise": "FCFA",
+      
+      "types_mutations": [
+        "Vente (onéreuse)",
+        "Donation (gratuite)",
+        "Succession (héréditaire)",
+        "Échange (permutation)",
+        "Apport en société",
+        "Adjudication judiciaire"
+      ],
+      
+      "nouvelle_structure_frais_2025": {
+        "transactions_0_10M": 15000,
+        "transactions_10M_50M": 30000,
+        "transactions_plus_50M": "0.5% de la valeur",
+        "frais_notaire_reduits": 250000,
+        "etat_descriptif_reduit": 5000,
+        "notes": "Réductions significatives par rapport au système précédent"
+      },
+      
+      "documents_requis": {
+        "titre_original": [
+          "Titre foncier original à transférer",
+          "Dernier certificat de propriété",
+          "Plan annexé au titre"
+        ],
+        "acte_mutation": [
+          "Acte notarié authentique",
+          "Convention de vente enregistrée",
+          "Acte sous seing privé légalisé",
+          "Jugement (pour mutations judiciaires)"
+        ],
+        "identite_parties": [
+          "CNI/CIP du cédant et du cessionnaire",
+          "Extrait d'acte de naissance",
+          "Procuration (si représentation)"
+        ],
+        "fiscalite": [
+          "Quitus fiscal du cédant",
+          "Attestation de non-dette fiscale",
+          "Évaluation fiscale du bien"
+        ],
+        "verification": [
+          "Certificat de non-gage immobilier",
+          "Attestation d'absence d'hypothèque",
+          "Certificat de non-opposition"
+        ]
+      },
+      
+      "procedure_e_notaire": {
+        "inscription_plateforme": {
+          "url": "enotaire.andf.bj",
+          "documents_numeriser": "Tous les documents requis au format PDF",
+          "taille_max_fichier": "10 MB par document",
+          "formats_acceptes": ["PDF", "JPG", "PNG"],
+          "creation_compte": "Email + numéro téléphone + pièce identité"
+        },
+        "soumission_dossier": {
+          "etapes": [
+            "Upload des documents numérisés",
+            "Vérification automatique de complétude",
+            "Paiement en ligne sécurisé",
+            "Attribution numéro de suivi",
+            "Notification SMS/Email de confirmation"
+          ]
+        },
+        "suivi_temps_reel": {
+          "notifications": "SMS + Email à chaque étape",
+          "statuts": ["Reçu", "En cours", "Validé", "Prêt", "Délivré"],
+          "delai_engagement": "72 heures maximum"
+        },
+        "retrait_numerique": {
+          "format": "PDF sécurisé avec QR code",
+          "verification": "Code de vérification unique",
+          "archivage": "Disponible 5 ans en ligne"
+        }
+      }
+    }
+  },
+
+  "structures_andf_completes": {
+    "siege_national": {
+      "nom": "Direction Générale ANDF",
+      "adresse": "Quartier Sainte-Rita, Cotonou",
+      "telephone": "+229 21 30 10 20",
+      "email": "contact@andf.bj",
+      "site_web": "https://andf.bj",
+      "directeur_general": "M. Victorien KOUGBLÉNOU",
+      "horaires": "Lundi-Vendredi : 7h30-17h30"
+    },
+    
+    "bcdf_principaux": {
+      "note": "14 BCDF pour couvrir 77 communes du Bénin",
+      "bureaux": [
+        {
+          "commune": "Cotonou",
+          "adresse": "Quartier Gbégamey",
+          "telephone": "+229 21 30 10 20",
+          "email": "bcdf.cotonou@andf.bj",
+          "departement": "Littoral",
+          "communes_desservies": ["Cotonou"],
+          "horaires": "7h30-17h30",
+          "services_specifiques": ["Mutations rapides", "e-Notaire pilote"]
+        },
+        {
+          "commune": "Porto-Novo",
+          "adresse": "Centre-ville",
+          "telephone": "+229 20 21 22 23",
+          "email": "bcdf.portonovo@andf.bj",
+          "departement": "Ouémé",
+          "communes_desservies": ["Porto-Novo", "Sèmè-Kpodji", "Adjarra"],
+          "horaires": "8h00-17h00"
+        },
+        {
+          "commune": "Parakou",
+          "adresse": "Centre administratif",
+          "telephone": "+229 23 61 03 04",
+          "email": "bcdf.parakou@andf.bj",
+          "departement": "Borgou",
+          "communes_desservies": ["Parakou", "Tchaourou", "N'Dali"],
+          "horaires": "7h30-17h30"
+        },
+        {
+          "commune": "Abomey-Calavi",
+          "telephone": "+229 21 38 20 15",
+          "departement": "Atlantique",
+          "communes_desservies": ["Abomey-Calavi", "Allada", "Ouidah", "Toffo", "Zè"]
+        }
+      ]
+    }
+  },
+
+  "services_numeriques_2025": {
+    "e_notaire": {
+      "url": "enotaire.andf.bj",
+      "statut": "Opérationnel depuis janvier 2025",
+      "services": [
+        "Mutations de titre foncier",
+        "Hypothèques et mainlevées",
+        "Radiations d'inscriptions",
+        "Consultations du cadastre",
+        "Suivi de dossiers en temps réel"
+      ],
+      "avantages": [
+        "Délai réduit à 72h",
+        "Service 24h/7j",
+        "Réduction des coûts",
+        "Traçabilité complète",
+        "Élimination des déplacements"
+      ]
+    },
+    "e_foncier_benin": {
+      "description": "Plateforme de formalisation foncière",
+      "obligation": "Obligatoire depuis janvier 2025 pour 12 communes pilotes",
+      "formation": "Formation dispensée aux responsables communaux en décembre 2024"
+    },
+    "cadastre_numerique": {
+      "objectif": "Cartographie complète du territoire",
+      "nup": "Numéro Unique Parcellaire pour chaque terrain",
+      "acces": "Consultation publique via portail dédié"
+    }
+  },
+
+  "tarifs_detailles_2025": {
+    "frais_etablissement": {
+      "titre_foncier_standard": 100000,
+      "titre_foncier_permis_habiter": 160000,
+      "certificat_appartenance": 50000,
+      "frais_lotissement": 80000,
+      "duplicata_titre": 25000
+    },
+    "frais_transactions_e_notaire": {
+      "mutations_0_10M": 15000,
+      "mutations_10_50M": 30000,
+      "mutations_plus_50M": "0.5% valeur transaction",
+      "frais_notaire_reduits": 250000,
+      "etat_descriptif": 5000,
+      "morcelements": "0.3% valeur + 102,500 FCFA"
+    },
+    "frais_techniques": {
+      "bornage_contradictoire": "Variable selon géomètre (50k-200k FCFA)",
+      "plan_topographique": "Variable selon superficie (50k-500k FCFA)",
+      "expertise_evaluation": "Selon complexité du dossier"
+    },
+    "reductions_2025": {
+      "notaire_avant": 750000,
+      "notaire_apres": 250000,
+      "economie_notaire": 500000,
+      "etat_descriptif_avant": 10000,
+      "etat_descriptif_apres": 5000
+    }
+  },
+
+  "problemes_frequents_solutions": {
+    "perte_titre_foncier": {
+      "procedure": [
+        "Déclaration de perte au commissariat",
+        "Publication journal d'annonces légales",
+        "Demande de duplicata au BCDF",
+        "Paiement 25,000 F CFA",
+        "Obtention nouveau titre (30 jours)"
+      ],
+      "documents": [
+        "Déclaration de perte officielle",
+        "Preuve de publication",
+        "CNI du propriétaire",
+        "Photocopies disponibles du titre perdu"
+      ]
+    },
+    "conflit_limites": {
+      "etapes_resolution": [
+        "Dialogue amiable avec voisin",
+        "Médiation chef de quartier/village",
+        "Bornage contradictoire par géomètre",
+        "Recours judiciaire si nécessaire"
+      ],
+      "couts": {
+        "mediation": "Gratuite",
+        "bornage": "Variable (partagé entre parties)",
+        "justice": "Frais de justice selon tribunal"
+      }
+    },
+    "dossier_refuse": {
+      "actions": [
+        "Demander motifs détaillés du refus",
+        "Corriger éléments défaillants",
+        "Compléter documents manquants",
+        "Redéposer dossier corrigé"
+      ],
+      "recours": [
+        "Recours gracieux (2 mois)",
+        "Recours hiérarchique",
+        "Recours contentieux tribunal"
+      ]
+    }
+  },
+
+  "contacts_urgence": {
+    "standard_andf": "+229 21 30 10 20",
+    "email_assistance": "assistance@andf.bj",
+    "hotline_e_notaire": "support.enotaire@andf.bj",
+    "service_client_horaires": "Lundi-Vendredi 8h-17h",
+    "urgences_fonciers": "Contactez BCDF local immédiatement"
+  }
+}

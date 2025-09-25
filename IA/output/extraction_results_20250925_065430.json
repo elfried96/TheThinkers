@@ -1,0 +1,82 @@
+{
+  "extraction_metadata": {
+    "timestamp": "2025-09-25T06:54:30.834329",
+    "extractor_version": "1.0.0",
+    "ocr_engine": "tesseract",
+    "language": "fr",
+    "confidence_threshold": 0.6,
+    "use_gpu": false,
+    "preprocessing_enabled": true
+  },
+  "extraction_statistics": {
+    "total_files": 1,
+    "successful_extractions": 0,
+    "failed_extractions": 1,
+    "total_coordinates": 0,
+    "average_coordinates_per_file": 0.0,
+    "processing_time_total": 1.155835,
+    "processing_time_average": 1.155835,
+    "file_types": {
+      "image": 1
+    },
+    "extraction_engines": {
+      "tesseract": 1
+    },
+    "quality_distribution": {
+      "high": 0,
+      "medium": 1,
+      "low": 0
+    },
+    "success_rate": 0.0
+  },
+  "results": [
+    {
+      "file_path": "Data_Hackathon_IA_2025/Training_Data/leve171.png",
+      "file_type": "image",
+      "extraction_engine": "tesseract",
+      "processing_time": 1.155835,
+      "image_processing": {
+        "original_path": "Data_Hackathon_IA_2025/Training_Data/leve171.png",
+        "processed_image": "[[240 240 240 ... 213 213 213]\n [240 240 240 ... 213 213 213]\n [240 240 240 ... 213 213 213]\n ...\n [196 196 196 ... 208 208 208]\n [196 196 196 ... 208 208 208]\n [196 196 196 ... 208 208 208]]",
+        "quality_metrics": {
+          "initial": {
+            "sharpness": 1970.2073462623002,
+            "contrast": 37.071758991543966,
+            "brightness": 196.13636302483022,
+            "noise_level": 5.887530809053826,
+            "overall_quality": 0.6787889914945895
+          },
+          "final": {
+            "sharpness": 1970.2073462623002,
+            "contrast": 37.071758991543966,
+            "brightness": 196.13636302483022,
+            "noise_level": 5.887530809053826,
+            "overall_quality": 0.6787889914945895
+          }
+        },
+        "processing_applied": [
+          "preprocessing"
+        ],
+        "rotation_corrected": 0.0,
+        "processing_success": true
+      },
+      "ocr_result": {
+        "extraction_method": "TesseractExtractor",
+        "language": "fr",
+        "confidence_threshold": 0.6,
+        "processing_time": 0.9008481502532959,
+        "raw_text": "LIVRE FONCIER TITRE N° x NORD SURFACE: 99ca 421148.44 421401:34| 7027477: 70270427) B9 702691.03| 702692.9 421187: 7026 16 1165.67 17 21152-28| 702800.88| 15216) ECHELLE : 1/2000",
+        "text_confidence": 0.8184615384615384,
+        "coordinates_found": [],
+        "coordinate_count": 0,
+        "extraction_success": false,
+        "timestamp": "2025-09-25T06:54:29.933391"
+      },
+      "coordinates_found": [],
+      "coordinate_count": 0,
+      "extraction_success": false,
+      "quality_score": 0.6787889914945895,
+      "timestamp": "2025-09-25T06:54:30.834290"
+    }
+  ]
+}

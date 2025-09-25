@@ -1,0 +1,18 @@
+{
+  "success": false,
+  "coordinates": [],
+  "coordinate_count": 0,
+  "ocr_text": "```json\n{\n  \"coordonnees\": [],\n  \"texte_complet\": \"23.\\nJATION\\n13: V10000\\n\\\"\\\"\\\"\\nParcelle N° \\\"i\\\"\\nBA\\n1131\\n30.07\\nB!\\n20.02\\n30.07\\nParcelle N°\\\"\\\"\\nPorcelles indiqucon\\n♡\\n20.09\\n20.1\"\n}\n```",
+  "processing_time": 163.152649,
+  "method": "gemini_simple",
+  "image_path": "Data_Hackathon_IA_2025/Training_Data/leve2.jpg",
+  "timestamp": "2025-09-25T10:30:55.992962",
+  "pipeline_version": "1.0.0_gemini",
+  "features": [
+    "gemini_ocr",
+    "advanced_preprocessing",
+    "utm_validation",
+    "json_parsing",
+    "multiple_patterns"
+  ]
+}

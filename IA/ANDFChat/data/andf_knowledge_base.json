@@ -1,0 +1,498 @@
+{
+  "metadata": {
+    "version": "2025.1",
+    "last_updated": "2025-09-24",
+    "source": "Code Foncier 2013 + Réformes 2025 + ANDF",
+    "legal_basis": "Loi 2013-01 du 14 août 2013 + Loi 2017-15 + Réformes digitales 2025"
+  },
+
+  "procedures_principales": {
+    "titre_foncier": {
+      "nom_complet": "Délivrance de Titre Foncier (TF)",
+      "description": "Document juridique essentiel établissant la pleine propriété d'un bien immobilier au Bénin",
+      "duree_estimee": "120 jours",
+      "cout_base": 100000,
+      "devise": "FCFA",
+      "frais_additionnels": "Frais de bornage contradictoire en sus",
+      "validite": "Permanent",
+      "base_legale": "Articles 112-144 Code Foncier 2013",
+      "effet_juridique": "Confère la pleine propriété foncière",
+      
+      "documents_requis": [
+        {
+          "categorie": "Identité",
+          "documents": [
+            "Carte d'Identité du Bénin (CIP) ou CNI",
+            "Extrait d'acte de naissance"
+          ]
+        },
+        {
+          "categorie": "Justificatifs propriété",
+          "documents": [
+            "Attestation de détention coutumière (ADC)",
+            "Attestation de recasement (Mairie)",
+            "Certificat administratif (Mairie)", 
+            "Certificat foncier rural",
+            "Avis d'imposition des 3 dernières années"
+          ]
+        },
+        {
+          "categorie": "Technique",
+          "documents": [
+            "Plan topographique géoréférencé",
+            "Levé topographique par géomètre agréé",
+            "Description détaillée de l'immeuble"
+          ]
+        },
+        {
+          "categorie": "Administratif",
+          "documents": [
+            "Fiche de demande de confirmation de droits fonciers",
+            "Attestation d'immatriculation IFU (personnes morales)"
+          ]
+        }
+      ],
+      
+      "etapes_procedure": [
+        {
+          "ordre": 1,
+          "nom": "Dépôt de dossier",
+          "description": "Remise du dossier complet au régisseur BCDF",
+          "delai": "1 jour",
+          "acteur": "Requérant"
+        },
+        {
+          "ordre": 2, 
+          "nom": "Contrôle de recevabilité",
+          "description": "Vérification formelle des documents par le régisseur",
+          "delai": "15 jours ouvrables",
+          "acteur": "Régisseur ANDF"
+        },
+        {
+          "ordre": 3,
+          "nom": "Publicité",
+          "description": "Affichage et notification aux tiers",
+          "delai": "60 jours",
+          "acteur": "ANDF + Mairie + Tribunal",
+          "formalites": [
+            "Affichage mairie et sur l'immeuble",
+            "Publication Journal Officiel",
+            "Notification tribunal et titulaires droits"
+          ]
+        },
+        {
+          "ordre": 4,
+          "nom": "Bornage contradictoire", 
+          "description": "Délimitation officielle par géomètre agréé",
+          "delai": "Variable",
+          "acteur": "Ingénieur-géomètre agréé",
+          "participants": [
+            "Requérant",
+            "Propriétaires limitrophes",
+            "Chef village/quartier",
+            "Chef service foncier mairie"
+          ]
+        },
+        {
+          "ordre": 5,
+          "nom": "Confirmation et enregistrement",
+          "description": "Établissement du Certificat de propriété foncière",
+          "delai": "30 jours",
+          "acteur": "Régisseur ANDF"
+        }
+      ],
+
+      "cas_contestation": {
+        "opposition": {
+          "delai": "60 jours après affichage",
+          "procedure": "Inscription au registre des oppositions",
+          "resolution": "Procédure judiciaire ou mainlevée amiable"
+        },
+        "recours": {
+          "delai_tribunal": "3 mois pour jugement",
+          "delai_appel": "3 mois pour arrêt"
+        }
+      },
+
+      "modernisation_2025": {
+        "digitalisation": "Procédures dématérialisées depuis janvier 2025",
+        "plateforme": "e-Notaire pour transactions en ligne",
+        "nup": "Numéro Unique Parcellaire obligatoire",
+        "delai_transaction": "72h pour changement propriétaire en ligne"
+      }
+    },
+
+    "certificat_appartenance": {
+      "nom_complet": "Certificat d'Appartenance",
+      "description": "Titre provisoire attestant de droits fonciers en cours de formalisation", 
+      "duree_estimee": "45 jours",
+      "cout_base": 50000,
+      "devise": "FCFA",
+      "validite": "1 an non renouvelable",
+      "base_legale": "Article 17 Code Foncier",
+      
+      "documents_requis": [
+        "Pièce d'identité",
+        "Documents de présomption de propriété", 
+        "Plan topographique sommaire",
+        "Fiche de demande"
+      ],
+      
+      "usage": "Permettre transactions en attendant titre foncier définitif"
+    },
+
+    "mutations_titre": {
+      "nom_complet": "Mutation de Titre Foncier",
+      "description": "Transfert de propriété d'un titre foncier existant",
+      "duree_estimee": "72 heures (en ligne) / 30 jours (physique)",
+      "cout_base": "0.3% de la valeur marchande",
+      "cout_minimum": 30000,
+      "devise": "FCFA",
+      
+      "types_mutations": [
+        "Vente",
+        "Donation", 
+        "Succession",
+        "Échange",
+        "Apport en société"
+      ],
+      
+      "documents_requis": [
+        "Titre foncier original",
+        "Acte notarié ou sous seing privé", 
+        "Pièces d'identité des parties",
+        "Quitus fiscal",
+        "Certificat de non-gage"
+      ]
+    },
+
+    "morcellement": {
+      "nom_complet": "Morcellement de Titre Foncier",
+      "description": "Division d'un titre foncier en plusieurs parcelles",
+      "cout_base": "0.3% de la valeur marchande + 102.500 FCFA",
+      "devise": "FCFA",
+      
+      "conditions": [
+        "Respect du plan d'urbanisme",
+        "Superficie minimum réglementaire",
+        "Accès à la voie publique"
+      ],
+      
+      "documents_requis": [
+        "Titre foncier original",
+        "Plan de morcellement par géomètre",
+        "Autorisation de morcellement (Mairie)",
+        "Étude d'impact si nécessaire"
+      ]
+    },
+
+    "hypotheque": {
+      "nom_complet": "Inscription Hypothécaire",
+      "description": "Garantie réelle sur titre foncier",
+      "cout_base": 0,
+      "devise": "FCFA", 
+      "duree_validite": "Variable selon convention",
+      
+      "conditions": [
+        "Titre foncier confirmé obligatoire",
+        "Acte notarié ou authentique",
+        "Montant garanti déterminé"
+      ]
+    }
+  },
+
+  "tarifs_detailles": {
+    "frais_etablissement": {
+      "titre_foncier_standard": 100000,
+      "titre_foncier_permis_habiter": 160000,
+      "certificat_appartenance": 50000,
+      "frais_lotissement": 80000
+    },
+    
+    "frais_transactions": {
+      "mutations": "0.3% valeur marchande",
+      "morcelements": "0.3% valeur marchande + 102.500 FCFA", 
+      "hypotheques": 0,
+      "mainlevee_hypotheque": 15000
+    },
+    
+    "frais_techniques": {
+      "bornage_contradictoire": "Variable selon géomètre",
+      "plan_topographique": "Variable selon superficie",
+      "expertise_evaluation": "Variable selon complexité"
+    },
+    
+    "devise": "FCFA",
+    "note": "Tarifs 2025 - Sujets à évolution réglementaire"
+  },
+
+  "documents_reference": {
+    "documents_presomption_propriete": [
+      {
+        "nom": "Attestation de détention coutumière (ADC)",
+        "delivre_par": "Mairie",
+        "description": "Reconnaît droits acquis selon coutume locale",
+        "validite": "Variable"
+      },
+      {
+        "nom": "Attestation de recasement", 
+        "delivre_par": "Mairie",
+        "description": "Suite à opération d'aménagement urbain",
+        "validite": "Permanente"
+      },
+      {
+        "nom": "Avis d'imposition",
+        "delivre_par": "Services fiscaux",
+        "description": "Preuve d'occupation et d'exploitation",
+        "exigence": "3 dernières années minimum"
+      },
+      {
+        "nom": "Certificat foncier rural",
+        "delivre_par": "Commission foncière communale", 
+        "description": "Droits fonciers en milieu rural",
+        "base": "Plan Foncier Rural (PFR)"
+      }
+    ],
+
+    "pieces_identite": [
+      "Carte d'Identité du Bénin (CIP)",
+      "Carte Nationale d'Identité (CNI)",
+      "Extrait d'acte de naissance",
+      "Passeport béninois"
+    ],
+
+    "documents_personnes_morales": [
+      "Attestation d'immatriculation IFU",
+      "Statuts de la société", 
+      "Procès-verbal de nomination des dirigeants",
+      "Document de déclaration fiscale"
+    ]
+  },
+
+  "structures_andf": {
+    "siege_national": {
+      "nom": "Direction Générale ANDF",
+      "localisation": "Cotonou",
+      "competences": [
+        "Coordination nationale",
+        "Politique foncière",
+        "Supervision BCDF"
+      ]
+    },
+    
+    "bureaux_communaux": {
+      "nom_complet": "Bureaux Communaux du Domaine et du Foncier (BCDF)",
+      "nombre_total": 77,
+      "repartition": "1 BCDF par commune",
+      
+      "bcdf_principaux": [
+        {
+          "commune": "Cotonou",
+          "importance": "Capitale économique",
+          "volume_transactions": "Le plus élevé"
+        },
+        {
+          "commune": "Porto-Novo", 
+          "importance": "Capitale politique",
+          "volume_transactions": "Important"
+        },
+        {
+          "commune": "Parakou",
+          "importance": "Capitale du Nord",
+          "volume_transactions": "Important" 
+        },
+        {
+          "commune": "Abomey-Calavi",
+          "importance": "Zone périurbaine Cotonou",
+          "volume_transactions": "Très important"
+        }
+      ],
+
+      "competences": [
+        "Réception demandes titre foncier",
+        "Instruction dossiers",
+        "Confirmation droits fonciers",
+        "Enregistrement mutations",
+        "Délivrance certificats"
+      ]
+    },
+
+    "acteurs_procedure": [
+      {
+        "nom": "Régisseur de la propriété foncière",
+        "role": "Instruction et confirmation droits fonciers",
+        "presence": "Chaque BCDF"
+      },
+      {
+        "nom": "Ingénieur-géomètre agréé",
+        "role": "Bornage contradictoire et plans",
+        "statut": "Prestataire privé agréé"
+      },
+      {
+        "nom": "Notaire",
+        "role": "Authentification actes de vente",
+        "integration": "Plateforme e-Notaire depuis 2025"
+      }
+    ]
+  },
+
+  "reformes_2025": {
+    "digitalisation": {
+      "lancement": "1er janvier 2025",
+      "plateforme_principale": "e-Notaire",
+      "benefices": [
+        "Transactions en ligne 72h",
+        "Réduction tracasseries administratives",
+        "Diminution coûts pour usagers",
+        "Élimination déplacements physiques"
+      ]
+    },
+
+    "nup_cadastre": {
+      "nom_complet": "Numéro Unique Parcellaire",
+      "objectif": "Identification unique chaque parcelle",
+      "procedure": "Confirmation cadastrale",
+      "impact": "Fin des litiges domaniaux",
+      "transparence": "Cadastre fiable et transparent"
+    },
+
+    "ameliorations_services": [
+      "Dématérialisation procédures",
+      "Réduction délais traitement", 
+      "Service en ligne 24/7",
+      "Traçabilité des dossiers",
+      "Interface multilingue prévue"
+    ]
+  },
+
+  "base_juridique": {
+    "code_foncier_2013": {
+      "reference": "Loi n°2013-01 du 14 août 2013",
+      "articles_total": 543,
+      "titres_principaux": [
+        "Titre I: Dispositions générales (Articles 1-7)",
+        "Titre II: De la propriété (Articles 8-111)", 
+        "Titre III: Protection et reconnaissance administrative (Articles 112-155)",
+        "Titre IV: Atteintes au droit de propriété",
+        "Titre V: Domaine immobilier État et collectivités",
+        "Titre VI: Terres rurales et coutumières",
+        "Titre VII: Preuve et contentieux foncier",
+        "Titre VIII: Cadre institutionnel",
+        "Titre IX: Infractions et sanctions",
+        "Titre X: Dispositions finales"
+      ]
+    },
+
+    "modifications_2017": {
+      "reference": "Loi n°2017-15 du 10 août 2017",
+      "objet": "Modification et complément du Code foncier 2013"
+    },
+
+    "decrets_application": [
+      "Décret n°2018-473 du 10 octobre 2018",
+      "Conditions délivrance titres fonciers",
+      "Autres décrets spécialisés"
+    ]
+  },
+
+  "definitions_cles": {
+    "certificat_propriete_fonciere": "Document de preuve de la propriété foncière délivré après procédure contradictoire de confirmation des droits fonciers",
+    "confirmation_droits_fonciers": "Procédure contradictoire débouchant sur délivrance d'un Certificat de propriété foncière",
+    "bornage_contradictoire": "Délimitation de deux fonds de terres contiguës en présence des parties",
+    "regime_foncier": "Système de confirmation de droits fonciers en vigueur au Bénin",
+    "domaine_prive": "Ensemble des biens immobiliers appartenant à l'État susceptibles d'appropriation privée",
+    "domaine_public": "Partie inaliénable du patrimoine de l'État soumise au droit administratif"
+  },
+
+  "communes_benin": {
+    "total": 77,
+    "departements": [
+      {
+        "nom": "Littoral",
+        "communes": ["Cotonou"],
+        "particularite": "Capitale économique"
+      },
+      {
+        "nom": "Ouémé", 
+        "communes": ["Porto-Novo", "Sèmè-Kpodji", "Adjarra", "Akpro-Missérété", "Avrankou", "Bonou", "Dangbo", "Ouinhi", "Adjohoun"],
+        "particularite": "Capitale politique"
+      },
+      {
+        "nom": "Atlantique",
+        "communes": ["Abomey-Calavi", "Allada", "Kpomassè", "Ouidah", "Sô-Ava", "Toffo", "Tori-Bossito", "Zè"],
+        "particularite": "Zone périurbaine forte demande foncière"
+      },
+      {
+        "nom": "Borgou",
+        "communes": ["Parakou", "Bembèrèkè", "Kalalé", "N'Dali", "Nikki", "Pèrèrè", "Sinendé", "Tchaourou"],
+        "particularite": "Capitale du Nord"
+      }
+    ]
+  },
+
+  "faq_communes": [
+    {
+      "question": "Combien coûte un titre foncier au Bénin?",
+      "reponse": "100.000 FCFA hors frais de bornage contradictoire pour un titre foncier standard. 160.000 FCFA pour établissement à partir d'un permis d'habiter."
+    },
+    {
+      "question": "Quelle est la durée pour obtenir un titre foncier?",
+      "reponse": "120 jours maximum en l'absence de contestation, selon l'article 139 du Code foncier."
+    },
+    {
+      "question": "Peut-on faire les démarches en ligne?",
+      "reponse": "Oui, depuis janvier 2025 via la plateforme e-Notaire. Les transactions peuvent se faire en 72h en ligne."
+    },
+    {
+      "question": "Quels documents faut-il pour un titre foncier?",
+      "reponse": "Pièce d'identité, documents de présomption de propriété (ADC, attestation recasement, etc.), plan topographique, fiche de demande."
+    },
+    {
+      "question": "Combien coûte une mutation de titre foncier?",
+      "reponse": "0,3% de la valeur marchande du bien avec un minimum de 30.000 FCFA."
+    }
+  ],
+
+  "glossaire_multilingue": {
+    "francais_fon": [
+      {"francais": "Titre foncier", "fon": "Anyigba wema"},
+      {"francais": "Propriété", "fon": "Tọn"},
+      {"francais": "Terrain", "fon": "Anyigba"},
+      {"francais": "Maison", "fon": "Xwé"},
+      {"francais": "Vendre", "fon": "Flín"},
+      {"francais": "Acheter", "fon": "Xlé"},
+      {"francais": "Héritage", "fon": "Domè"}
+    ],
+    
+    "francais_yoruba": [
+      {"francais": "Titre foncier", "yoruba": "Iwe ilẹ"},
+      {"francais": "Propriété", "yoruba": "Ohun ini"},
+      {"francais": "Terrain", "yoruba": "Ilẹ"},
+      {"francais": "Maison", "yoruba": "Ile"},
+      {"francais": "Vendre", "yoruba": "Ta"},
+      {"francais": "Acheter", "yoruba": "Ra"},
+      {"francais": "Héritage", "yoruba": "Ogún"}
+    ]
+  },
+
+  "contacts_utiles": {
+    "andf_national": {
+      "telephone": "Numéro principal ANDF",
+      "email": "contact@andf.bj",
+      "site_web": "https://andf.bj",
+      "adresse": "Cotonou, République du Bénin"
+    },
+    
+    "urgence_foncier": {
+      "numero_vert": "À définir",
+      "service_client": "Disponible sur plateforme e-Notaire"
+    },
+    
+    "services_numeriques": [
+      "Cadastre en ligne",
+      "Plateforme e-Notaire", 
+      "Service public digital",
+      "Consultation dossiers en ligne"
+    ]
+  }
+}

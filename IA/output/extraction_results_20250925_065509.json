@@ -1,0 +1,112 @@
+{
+  "extraction_metadata": {
+    "timestamp": "2025-09-25T06:55:09.974352",
+    "extractor_version": "1.0.0",
+    "ocr_engine": "tesseract",
+    "language": "fr",
+    "confidence_threshold": 0.6,
+    "use_gpu": false,
+    "preprocessing_enabled": true
+  },
+  "extraction_statistics": {
+    "total_files": 1,
+    "successful_extractions": 1,
+    "failed_extractions": 0,
+    "total_coordinates": 1,
+    "average_coordinates_per_file": 1.0,
+    "processing_time_total": 0.692329,
+    "processing_time_average": 0.692329,
+    "file_types": {
+      "image": 1
+    },
+    "extraction_engines": {
+      "tesseract": 1
+    },
+    "quality_distribution": {
+      "high": 0,
+      "medium": 1,
+      "low": 0
+    },
+    "success_rate": 1.0
+  },
+  "results": [
+    {
+      "file_path": "Data_Hackathon_IA_2025/Training_Data/leve125.png",
+      "file_type": "image",
+      "extraction_engine": "tesseract",
+      "processing_time": 0.692329,
+      "image_processing": {
+        "original_path": "Data_Hackathon_IA_2025/Training_Data/leve125.png",
+        "processed_image": "[[255 255 255 ... 255 255 254]\n [255 255 255 ... 255 255 255]\n [255 255 255 ... 255 255 255]\n ...\n [254 253 252 ... 255 255 255]\n [254 254 253 ... 255 255 255]\n [255 254 254 ... 255 255 255]]",
+        "quality_metrics": {
+          "initial": {
+            "sharpness": 4249.500349846502,
+            "contrast": 46.96948137382705,
+            "brightness": 240.88185318593963,
+            "noise_level": 7.372452697387488,
+            "overall_quality": 0.6320771322517112
+          },
+          "final": {
+            "sharpness": 4249.500349846502,
+            "contrast": 46.96948137382705,
+            "brightness": 240.88185318593963,
+            "noise_level": 7.372452697387488,
+            "overall_quality": 0.6320771322517112
+          }
+        },
+        "processing_applied": [
+          "preprocessing"
+        ],
+        "rotation_corrected": 0.0,
+        "processing_success": true
+      },
+      "ocr_result": {
+        "extraction_method": "TesseractExtractor",
+        "language": "fr",
+        "confidence_threshold": 0.6,
+        "processing_time": 0.5009899139404297,
+        "raw_text": "TITRE N° COORDONNEES NORD | ] SURFACE: B3ca |445460.59 |445460.73 |445490.77 70442000 + À | PLAN DE Echelle:",
+        "text_confidence": 0.8383333333333333,
+        "coordinates_found": [
+          {
+            "x": 445490.77,
+            "y": 704420.0,
+            "format": "UTM",
+            "coordinate_system": "EPSG:32631",
+            "confidence": 0.8,
+            "matched_text": "445490.77 70442000",
+            "position_in_text": [
+              67,
+              85
+            ],
+            "extraction_method": "TesseractExtractor",
+            "pattern_used": "(\\d{3})(\\d{3})[\\.,]?(\\d{2})?\\s+(\\d{3})(\\d{3})[\\.,]?(\\d{2})?"
+          }
+        ],
+        "coordinate_count": 1,
+        "extraction_success": true,
+        "timestamp": "2025-09-25T06:55:09.473304"
+      },
+      "coordinates_found": [
+        {
+          "x": 445490.77,
+          "y": 704420.0,
+          "format": "UTM",
+          "coordinate_system": "EPSG:32631",
+          "confidence": 0.8,
+          "matched_text": "445490.77 70442000",
+          "position_in_text": [
+            67,
+            85
+          ],
+          "extraction_method": "TesseractExtractor",
+          "pattern_used": "(\\d{3})(\\d{3})[\\.,]?(\\d{2})?\\s+(\\d{3})(\\d{3})[\\.,]?(\\d{2})?"
+        }
+      ],
+      "coordinate_count": 1,
+      "extraction_success": true,
+      "quality_score": 0.6320771322517112,
+      "timestamp": "2025-09-25T06:55:09.974317"
+    }
+  ]
+}

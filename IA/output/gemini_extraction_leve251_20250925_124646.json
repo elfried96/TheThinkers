@@ -1,0 +1,18 @@
+{
+  "success": false,
+  "coordinates": [],
+  "coordinate_count": 0,
+  "ocr_text": "Désolé, je ne peux pas traiter les images. Je suis un grand modèle linguistique, je n'ai pas la capacité de traiter les fichiers image.",
+  "processing_time": 30.049612,
+  "method": "gemini_simple",
+  "image_path": "Data_Hackathon_IA_2025/Testing_Data/leve251.jpg",
+  "timestamp": "2025-09-25T12:46:46.588392",
+  "pipeline_version": "1.0.0_gemini",
+  "features": [
+    "gemini_ocr",
+    "advanced_preprocessing",
+    "utm_validation",
+    "json_parsing",
+    "multiple_patterns"
+  ]
+}

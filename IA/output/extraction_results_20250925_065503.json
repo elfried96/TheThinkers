@@ -1,0 +1,83 @@
+{
+  "extraction_metadata": {
+    "timestamp": "2025-09-25T06:55:03.587627",
+    "extractor_version": "1.0.0",
+    "ocr_engine": "tesseract",
+    "language": "fr",
+    "confidence_threshold": 0.6,
+    "use_gpu": false,
+    "preprocessing_enabled": true
+  },
+  "extraction_statistics": {
+    "total_files": 1,
+    "successful_extractions": 0,
+    "failed_extractions": 1,
+    "total_coordinates": 0,
+    "average_coordinates_per_file": 0.0,
+    "processing_time_total": 0.440455,
+    "processing_time_average": 0.440455,
+    "file_types": {
+      "image": 1
+    },
+    "extraction_engines": {
+      "tesseract": 1
+    },
+    "quality_distribution": {
+      "high": 0,
+      "medium": 0,
+      "low": 1
+    },
+    "success_rate": 0.0
+  },
+  "results": [
+    {
+      "file_path": "Data_Hackathon_IA_2025/Training_Data/leve100.png",
+      "file_type": "image",
+      "extraction_engine": "tesseract",
+      "processing_time": 0.440455,
+      "image_processing": {
+        "original_path": "Data_Hackathon_IA_2025/Training_Data/leve100.png",
+        "processed_image": "[[255 255 255 ... 255 255 255]\n [255 255 255 ... 255 255 255]\n [255 255 255 ... 255 255 251]\n ...\n [212 213 213 ... 255 255 255]\n [212 213 213 ... 255 255 255]\n [212 213 213 ... 255 255 255]]",
+        "quality_metrics": {
+          "initial": {
+            "sharpness": 1320.6557162764495,
+            "contrast": 23.017457020636293,
+            "brightness": 247.9459458939651,
+            "noise_level": 2.5620357655276935,
+            "overall_quality": 0.5683381714738688
+          },
+          "final": {
+            "sharpness": 642.3111161111298,
+            "contrast": 19.971149241062694,
+            "brightness": 247.77581441770212,
+            "noise_level": 1.5128049732631417,
+            "overall_quality": 0.45635742972221127
+          }
+        },
+        "processing_applied": [
+          "preprocessing",
+          "rotation_correction"
+        ],
+        "rotation_corrected": 21.99999237060547,
+        "processing_success": false
+      },
+      "ocr_result": {
+        "extraction_method": "TesseractExtractor",
+        "language": "fr",
+        "confidence_threshold": 0.6,
+        "processing_time": 0.22240185737609863,
+        "raw_text": "{/",
+        "text_confidence": 0.74,
+        "coordinates_found": [],
+        "coordinate_count": 0,
+        "extraction_success": false,
+        "timestamp": "2025-09-25T06:55:03.365160"
+      },
+      "coordinates_found": [],
+      "coordinate_count": 0,
+      "extraction_success": false,
+      "quality_score": 0.45635742972221127,
+      "timestamp": "2025-09-25T06:55:03.587595"
+    }
+  ]
+}

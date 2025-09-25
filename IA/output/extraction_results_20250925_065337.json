@@ -1,0 +1,82 @@
+{
+  "extraction_metadata": {
+    "timestamp": "2025-09-25T06:53:37.227088",
+    "extractor_version": "1.0.0",
+    "ocr_engine": "tesseract",
+    "language": "fr",
+    "confidence_threshold": 0.6,
+    "use_gpu": false,
+    "preprocessing_enabled": true
+  },
+  "extraction_statistics": {
+    "total_files": 1,
+    "successful_extractions": 0,
+    "failed_extractions": 1,
+    "total_coordinates": 0,
+    "average_coordinates_per_file": 0.0,
+    "processing_time_total": 0.863178,
+    "processing_time_average": 0.863178,
+    "file_types": {
+      "image": 1
+    },
+    "extraction_engines": {
+      "tesseract": 1
+    },
+    "quality_distribution": {
+      "high": 0,
+      "medium": 1,
+      "low": 0
+    },
+    "success_rate": 0.0
+  },
+  "results": [
+    {
+      "file_path": "Data_Hackathon_IA_2025/Training_Data/leve18.png",
+      "file_type": "image",
+      "extraction_engine": "tesseract",
+      "processing_time": 0.863178,
+      "image_processing": {
+        "original_path": "Data_Hackathon_IA_2025/Training_Data/leve18.png",
+        "processed_image": "[[187 187 187 ... 180 180 180]\n [187 187 187 ... 180 181 181]\n [187 187 187 ... 181 181 181]\n ...\n [192 192 192 ... 217 217 217]\n [192 192 192 ... 217 217 217]\n [192 192 192 ... 217 217 217]]",
+        "quality_metrics": {
+          "initial": {
+            "sharpness": 4660.018453562248,
+            "contrast": 40.42324690228858,
+            "brightness": 207.18513677546292,
+            "noise_level": 6.5323235168113225,
+            "overall_quality": 0.6688646406940095
+          },
+          "final": {
+            "sharpness": 4660.018453562248,
+            "contrast": 40.42324690228858,
+            "brightness": 207.18513677546292,
+            "noise_level": 6.5323235168113225,
+            "overall_quality": 0.6688646406940095
+          }
+        },
+        "processing_applied": [
+          "preprocessing"
+        ],
+        "rotation_corrected": 0.0,
+        "processing_success": true
+      },
+      "ocr_result": {
+        "extraction_method": "TesseractExtractor",
+        "language": "fr",
+        "confidence_threshold": 0.6,
+        "processing_time": 0.647428035736084,
+        "raw_text": "REGISTRE FONCIER| TITRE N° COORDONNEES. NORD B1 82 B4 SURFACE : 00a 85 70256000 85 3857 Zone SN \\ \\ ECHELLE 1/2000",
+        "text_confidence": 0.7940909090909091,
+        "coordinates_found": [],
+        "coordinate_count": 0,
+        "extraction_success": false,
+        "timestamp": "2025-09-25T06:53:36.579587"
+      },
+      "coordinates_found": [],
+      "coordinate_count": 0,
+      "extraction_success": false,
+      "quality_score": 0.6688646406940095,
+      "timestamp": "2025-09-25T06:53:37.227054"
+    }
+  ]
+}

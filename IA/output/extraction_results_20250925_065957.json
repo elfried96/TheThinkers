@@ -1,0 +1,83 @@
+{
+  "extraction_metadata": {
+    "timestamp": "2025-09-25T06:59:57.508356",
+    "extractor_version": "1.0.0",
+    "ocr_engine": "tesseract",
+    "language": "fr",
+    "confidence_threshold": 0.6,
+    "use_gpu": false,
+    "preprocessing_enabled": true
+  },
+  "extraction_statistics": {
+    "total_files": 1,
+    "successful_extractions": 0,
+    "failed_extractions": 1,
+    "total_coordinates": 0,
+    "average_coordinates_per_file": 0.0,
+    "processing_time_total": 3.604929,
+    "processing_time_average": 3.604929,
+    "file_types": {
+      "image": 1
+    },
+    "extraction_engines": {
+      "tesseract": 1
+    },
+    "quality_distribution": {
+      "high": 0,
+      "medium": 0,
+      "low": 1
+    },
+    "success_rate": 0.0
+  },
+  "results": [
+    {
+      "file_path": "Data_Hackathon_IA_2025/Training_Data/leve2.jpg",
+      "file_type": "image",
+      "extraction_engine": "tesseract",
+      "processing_time": 3.604929,
+      "image_processing": {
+        "original_path": "Data_Hackathon_IA_2025/Training_Data/leve2.jpg",
+        "processed_image": "[[157 157 157 ... 216 214 213]\n [157 157 157 ... 216 214 213]\n [157 157 157 ... 216 214 213]\n ...\n [180 180 180 ... 112 112 112]\n [180 180 180 ... 111 112 112]\n [180 180 180 ... 111 111 111]]",
+        "quality_metrics": {
+          "initial": {
+            "sharpness": 23.107141869285325,
+            "contrast": 29.8970771187486,
+            "brightness": 170.04197195292028,
+            "noise_level": 0.45515299558311045,
+            "overall_quality": 0.42702012893797414
+          },
+          "final": {
+            "sharpness": 20.595975758132703,
+            "contrast": 29.888414153896218,
+            "brightness": 169.77555533543392,
+            "noise_level": 0.44008780494707644,
+            "overall_quality": 0.4267206047009403
+          }
+        },
+        "processing_applied": [
+          "preprocessing",
+          "rotation_correction"
+        ],
+        "rotation_corrected": 2.0,
+        "processing_success": false
+      },
+      "ocr_result": {
+        "extraction_method": "TesseractExtractor",
+        "language": "fr",
+        "confidence_threshold": 0.6,
+        "processing_time": 1.738659143447876,
+        "raw_text": "Procédure FONCIER TITRE COORDONNEES \" NORD B1 SURFACE 05a 90 SURFACE 05a /32158 321559. 9.04 11135497 60 SURFACE TOTALE : 11a 82ca COORDONNEES \" B1 22 83 1155515.00 Parcelle N°\"c\" 11355 15.00 B4 Parcelle N°\"+\" SSB3 B2 B4 30 0> Parcelle N°\"f\" B3 1135465.00 DE ATION ECHELLE : 1/10000 71. ù (7) ECHELLE ; 1",
+        "text_confidence": 0.8507272727272728,
+        "coordinates_found": [],
+        "coordinate_count": 0,
+        "extraction_success": false,
+        "timestamp": "2025-09-25T06:59:55.769610"
+      },
+      "coordinates_found": [],
+      "coordinate_count": 0,
+      "extraction_success": false,
+      "quality_score": 0.4267206047009403,
+      "timestamp": "2025-09-25T06:59:57.508320"
+    }
+  ]
+}

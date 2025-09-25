@@ -1,0 +1,127 @@
+{
+  "success": true,
+  "coordinates": [
+    {
+      "point_id": "B1",
+      "x": 481104.4,
+      "y": 800820.7,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    },
+    {
+      "point_id": "B2",
+      "x": 481210.07,
+      "y": 800874.0,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    },
+    {
+      "point_id": "B3",
+      "x": 481304.89,
+      "y": 800811.9,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    },
+    {
+      "point_id": "B4",
+      "x": 481448.83,
+      "y": 800811.74,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    },
+    {
+      "point_id": "B5",
+      "x": 481481.42,
+      "y": 800777.03,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    },
+    {
+      "point_id": "B6",
+      "x": 481483.1,
+      "y": 800730.49,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    },
+    {
+      "point_id": "B7",
+      "x": 481329.57,
+      "y": 800641.09,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    },
+    {
+      "point_id": "B8",
+      "x": 481234.09,
+      "y": 800473.89,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    },
+    {
+      "point_id": "B9",
+      "x": 481190.93,
+      "y": 800435.59,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    },
+    {
+      "point_id": "B10",
+      "x": 481149.33,
+      "y": 800370.33,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    },
+    {
+      "point_id": "B11",
+      "x": 480968.32,
+      "y": 800313.21,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    },
+    {
+      "point_id": "B12",
+      "x": 481041.7,
+      "y": 800310.2,
+      "format": "UTM",
+      "coordinate_system": "EPSG:32631",
+      "confidence": 0.95,
+      "source": "gemini_json"
+    }
+  ],
+  "coordinate_count": 12,
+  "ocr_text": "```json\n{\n  \"coordonnees\": [\n    {\"point\": \"B1\", \"x\": 481104.40, \"y\": 800820.70},\n    {\"point\": \"B2\", \"x\": 481210.07, \"y\": 800874.00},\n    {\"point\": \"B3\", \"x\": 481304.89, \"y\": 800811.90},\n    {\"point\": \"B4\", \"x\": 481448.83, \"y\": 800811.74},\n    {\"point\": \"B5\", \"x\": 481481.42, \"y\": 800777.03},\n    {\"point\": \"B6\", \"x\": 481483.10, \"y\": 800730.49},\n    {\"point\": \"B7\", \"x\": 481329.57, \"y\": 800641.09},\n    {\"point\": \"B8\", \"x\": 481234.09, \"y\": 800473.89},\n    {\"point\": \"B9\", \"x\": 481190.93, \"y\": 800435...",
+  "processing_time": 15.445321,
+  "method": "gemini_simple",
+  "image_path": "Data_Hackathon_IA_2025/Testing_Data/leve262.png",
+  "timestamp": "2025-09-25T12:49:22.049535",
+  "pipeline_version": "1.0.0_gemini",
+  "features": [
+    "gemini_ocr",
+    "advanced_preprocessing",
+    "utm_validation",
+    "json_parsing",
+    "multiple_patterns"
+  ]
+}
