@@ -192,7 +192,7 @@ uv add jupyter matplotlib seaborn
 ### Récupération en cas d'erreur
 ```bash
 # Restaurer l'original depuis le backup
-cp submissions_reordered.csv.backup submissions_reordered.csv
+cp submissions_TheThinkers.csv.backup submissions_TheThinkers.csv
 ```
 
 ---

@@ -240,7 +240,7 @@ def show_summary():
     print("✅ Sharpening intelligent basé sur difficulté")
     print("✅ Fichier submissions.csv réordonné selon référence")
     print("\\n📁 Fichiers générés:")
-    print("   • submissions_reordered.csv (ordre correct)")
+    print("   • submissions_TheThinkers.csv (ordre correct)")
     print("   • main_morphological.py (script amélioré)")
     print("\\n🚀 Prêt pour traitement avec meilleure précision OCR!")
 

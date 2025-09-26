@@ -70,7 +70,7 @@ def test_single_extraction(image_path: str):
                         print(f"        → WGS84: Lat={lat:.6f}, Lon={lon:.6f} (Zone UTM {utm_zone})")
             
             # Comparer avec les données attendues du CSV
-            csv_path = "submissions_reordered.csv"
+            csv_path = "submissions_TheThinkers.csv"
             if Path(csv_path).exists():
                 print(f"\n📋 Comparaison avec {csv_path}:")
                 image_name = Path(image_path).name

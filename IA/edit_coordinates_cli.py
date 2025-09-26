@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Éditeur interactif de coordonnées - Version ligne de commande
-Alternative au notebook Jupyter pour modifier submissions_reordered.csv
+Alternative au notebook Jupyter pour modifier submissions_TheThinkers.csv
 """
 
 import pandas as pd
@@ -15,7 +15,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 class CoordinateEditor:
-    def __init__(self, csv_file='submissions_reordered.csv'):
+    def __init__(self, csv_file='submissions_TheThinkers.csv'):
         self.csv_file = csv_file
         self.df = None
         self.analysis_df = None
@@ -327,7 +327,7 @@ def main():
     print("=" * 50)
     
     # Chercher le fichier CSV
-    csv_file = 'submissions_reordered.csv'
+    csv_file = 'submissions_TheThinkers.csv'
     
     # Créer l'éditeur
     editor = CoordinateEditor(csv_file)

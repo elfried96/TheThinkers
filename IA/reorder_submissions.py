@@ -56,9 +56,9 @@ def reorder_submissions():
     reordered_df = pd.DataFrame(reordered_rows, columns=header)
     
     # Sauvegarder
-    reordered_df.to_csv('submissions_reordered.csv', index=False)
+    reordered_df.to_csv('submissions_TheThinkers.csv', index=False)
     
-    print(f"✅ Fichier réordonné sauvé: submissions_reordered.csv")
+    print(f"✅ Fichier réordonné sauvé: submissions_TheThinkers.csv")
     print(f"📊 {len(reordered_df)} lignes au total")
     
     return reordered_df

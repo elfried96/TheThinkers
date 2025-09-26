@@ -157,7 +157,7 @@ def show_next_steps():
     print("   - Surveillez les temps de traitement")
     
     print("4. 📝 SOUMISSION:")
-    print("   - Utilisez submissions_reordered.csv (bon ordre)")
+    print("   - Utilisez submissions_TheThinkers.csv (bon ordre)")
     print("   - Traitez le dataset complet avec améliorations")
 
 if __name__ == "__main__":

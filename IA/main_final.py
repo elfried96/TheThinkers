@@ -640,7 +640,7 @@ async def extract_coordinates(file: UploadFile = File(...)):
             # Superposition spatiale
             spatial_overlays = spatial_overlay.check_overlays(coordinates_utm)
             
-            # Format de sortie final - Compatible avec submissions_reordered.csv
+            # Format de sortie final - Compatible avec submissions_TheThinkers.csv
             result = {
                 "filename": file.filename,
                 "timestamp": datetime.now().isoformat(),

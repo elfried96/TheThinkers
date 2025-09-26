@@ -78,4 +78,4 @@ EOF
 RUN chmod +x /home/app/start.sh
 
 # Commande par défaut
-CMD ["/home/app/start.sh"]
+CMD ["uv", "run", "python", "start_api_server.py"]
