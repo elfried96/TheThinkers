@@ -1,0 +1,43 @@
+{
+  "filename": "leve9.png",
+  "timestamp": "2025-01-24T21:45:00.123456",
+  "extraction_success": true,
+  "coordinate_count": 4,
+  
+  "coordinates_utm": [
+    {"x": 448005.15, "y": 703480.27},
+    {"x": 448034.38, "y": 703480.24}, 
+    {"x": 448034.23, "y": 703465.0},
+    {"x": 448005.21, "y": 703465.61}
+  ],
+  
+  "coordinates_wgs84": [
+    {"latitude": 6.364131, "longitude": 2.529863},
+    {"latitude": 6.364128, "longitude": 2.530123},
+    {"latitude": 6.363995, "longitude": 2.530121},
+    {"latitude": 6.363998, "longitude": 2.529861}
+  ],
+  
+  "spatial_overlays": {
+    "aif": "NON",
+    "air_proteges": "NON", 
+    "dpl": "NON",
+    "dpm": "NON",
+    "enregistrement individuel": "NON",
+    "litige": "NON",
+    "parcelles": "NON",
+    "restriction": "NON", 
+    "tf_demembres": "OUI",
+    "tf_en_cours": "NON",
+    "tf_etat": "NON",
+    "titre_reconstitue": "NON",
+    "zone_inondable": "NON"
+  },
+  
+  "metadata": {
+    "coordinate_system_utm": "EPSG:32631",
+    "coordinate_system_wgs84": "EPSG:4326", 
+    "preprocessing_applied": true,
+    "extraction_method": "gemini-1.5-flash"
+  }
+}

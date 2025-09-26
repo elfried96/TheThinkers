@@ -1,11 +1,13 @@
-# 📍 Extracteur de Coordonnées pour Relevés Fonciers
+# 🤖 Module IA - TheThinkers
 
-**Architecture modulaire pour extraction automatique de coordonnées depuis images et PDFs**
+**Système d'intelligence artificielle pour l'extraction automatique de coordonnées géographiques**
 
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![PaddleOCR](https://img.shields.io/badge/OCR-PaddleOCR-orange.svg)](https://github.com/PaddlePaddle/PaddleOCR)
-[![Tesseract](https://img.shields.io/badge/OCR-Tesseract-red.svg)](https://github.com/tesseract-ocr/tesseract)
+*Développé dans le cadre du Hackathon IA 2025*
+
+[![Python](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/downloads/)
+[![UV](https://img.shields.io/badge/package%20manager-uv-green.svg)](https://github.com/astral-sh/uv)
+[![Gemini](https://img.shields.io/badge/AI-Google%20Gemini-orange.svg)](https://ai.google.dev/)
+[![OpenCV](https://img.shields.io/badge/vision-OpenCV-red.svg)](https://opencv.org/)
 
 ## 🎯 Objectif
 
@@ -17,57 +19,59 @@ Extraction automatique de coordonnées géographiques (UTM 31N) depuis :
 ## ⚡ Installation Rapide
 
 ```bash
-# 1. Cloner le projet
-git clone https://github.com/votre-repo/coordinate-extractor.git
-cd coordinate-extractor
+# 1. Depuis la racine du projet TheThinkers
+cd IA/
 
-# 2. Installation CPU uniquement (recommandé)
-pip install -r requirements.txt
+# 2. Installation avec UV (gestionnaire de paquets moderne)
+uv sync
 
-# 3. Test rapide
-python main_extractor.py --info
+# 3. Activation de l'environnement virtuel
+source .venv/bin/activate  # Linux/Mac
+# ou
+.venv\Scripts\activate     # Windows
+
+# 4. Configuration des variables d'environnement
+cp .env.example .env
+# Éditer .env avec votre clé API Gemini
+
+# 5. Test rapide
+uv run python main.py --help
 ```
 
 ## 🚀 Utilisation
 
-### Traitement d'un fichier unique
+### Exemple rapide
 ```bash
-# Image
-python main_extractor.py image.png
+# Traitement d'un fichier image avec Gemini AI
+uv run python gemini_simple_extractor.py path/to/image.png
 
-# PDF
-python main_extractor.py document.pdf
+# Extraction avec préprocessing morphologique
+uv run python main_morphological.py
 
-# Avec paramètres personnalisés
-python main_extractor.py carte.png --ocr paddleocr --confidence 0.7
+# Pipeline complet avec validation
+uv run python main.py
 ```
 
-### Traitement par lot
-```bash
-# Répertoire complet
-python main_extractor.py ./data/ --recursive
-
-# Avec moteur spécifique
-python main_extractor.py ./images/ --engine tesseract --lang fr
-```
+### Scripts principaux
+- `main.py` : Pipeline principal avec OCR traditionnel
+- `gemini_simple_extractor.py` : Extraction via Gemini AI
+- `main_morphological.py` : Préprocessing morphologique avancé
+- `coordinate_validator.py` : Validation et correction de coordonnées
 
 ### Utilisation en Python
 ```python
-from main_extractor import CoordinateExtractionPipeline
+from gemini_simple_extractor import GeminiCoordinateExtractor
+import os
+
+# Configuration
+os.environ['GOOGLE_API_KEY'] = 'votre_clé_api'
 
 # Initialisation
-pipeline = CoordinateExtractionPipeline(
-    ocr_engine="paddleocr",
-    language="fr",
-    confidence_threshold=0.6
-)
+extractor = GeminiCoordinateExtractor()
 
 # Extraction
-result = pipeline.process_file("relevé.png")
-print(f"Coordonnées trouvées: {result['coordinate_count']}")
-
-# Sauvegarde
-pipeline.save_results(result, "resultats.json")
+results = extractor.process_image("carte.png")
+print(f"Coordonnées trouvées: {len(results)}")
 ```
 
 ## 📊 Format de Sortie JSON
