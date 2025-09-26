@@ -1,0 +1,40 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+
+/public/aif.geojson
+/public/air_proteges.geojson
+/public/dpl.geojson
+/public/dpm.geojson
+/public/enregistrement individuel.geojson
+/public/litige.geojson
+/public/restriction.geojson
+/public/tf_demembres.geojson
+/public/tf_en_cours.geojson
+/public/tf_etat.geojson
+/public/titre_reconstitue.geojson
+/public/zone_inondable.geojson
+/public/parcelles.geojson
+
