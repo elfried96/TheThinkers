@@ -1,0 +1,89 @@
+# Fichiers à ignorer dans les builds Docker
+
+# Environnements virtuels
+.venv/
+venv/
+env/
+ENV/
+
+# Fichiers de cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Logs
+*.log
+logs/
+*.out
+
+# Fichiers temporaires
+temp/
+tmp/
+*.tmp
+*.temp
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose*.yml
+.dockerignore
+
+# Environnement
+.env
+.env.*
+!.env.example
+
+# Données de test (ajustez selon vos besoins)
+*.jpg
+*.jpeg
+*.png
+*.pdf
+Data_Hackathon_IA_2025/Testing_Data/
+
+# Documentation
+README*.md
+docs/
+*.md
+!**/README.md

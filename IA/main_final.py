@@ -327,10 +327,11 @@ class GeminiExtractor:
         return validated
 
 class SpatialOverlay:
-    """Superposition spatiale avec données GeoJSON"""
+    """Superposition spatiale avec données GeoJSON - Compatible Windows/Linux"""
     
-    def __init__(self, geojson_dir: str = "Data_Hackathon_IA_2025/couche"):
-        self.geojson_dir = Path(geojson_dir)
+    def __init__(self, geojson_dir: str = None):
+        # Détection automatique du répertoire des couches
+        self.geojson_dir = self._find_geojson_directory(geojson_dir)
         self.layer_names = [
             'aif', 'air_proteges', 'dpl', 'dpm', 'enregistrement individuel',
             'litige', 'parcelles', 'restriction', 'tf_demembres', 'tf_en_cours',
@@ -338,44 +339,128 @@ class SpatialOverlay:
         ]
         self.layers_cache = {}
         
+        # Logs de débogage
+        logger.info(f"SpatialOverlay initialisé avec répertoire: {self.geojson_dir}")
+        if self.geojson_dir and self.geojson_dir.exists():
+            logger.info(f"Répertoire trouvé: {self.geojson_dir} (existe: {self.geojson_dir.exists()})")
+            # Lister les fichiers disponibles
+            geojson_files = list(self.geojson_dir.glob("*.geojson"))
+            logger.info(f"Fichiers GeoJSON détectés: {[f.name for f in geojson_files]}")
+        else:
+            logger.warning(f"Répertoire GeoJSON introuvable: {self.geojson_dir}")
+    
+    def _find_geojson_directory(self, geojson_dir: str = None) -> Path:
+        """Détecte automatiquement le répertoire des couches GeoJSON"""
+        possible_paths = []
+        
+        # Si un chemin est fourni, l'utiliser en premier
+        if geojson_dir:
+            possible_paths.append(Path(geojson_dir))
+        
+        # Chemins possibles relatifs au script actuel
+        script_dir = Path(__file__).parent
+        possible_paths.extend([
+            script_dir / "Data_Hackathon_IA_2025" / "couche",
+            script_dir / "Data_Hackathon_IA_2025" / "couches", 
+            Path("Data_Hackathon_IA_2025/couche"),
+            Path("Data_Hackathon_IA_2025/couches"),
+            Path("./Data_Hackathon_IA_2025/couche"),
+            Path("../Data_Hackathon_IA_2025/couche"),
+            script_dir.parent / "Data_Hackathon_IA_2025" / "couche"
+        ])
+        
+        # Tester chaque chemin
+        for path in possible_paths:
+            abs_path = path.resolve()
+            logger.info(f"Test chemin: {abs_path} (existe: {abs_path.exists()})")
+            if abs_path.exists() and abs_path.is_dir():
+                # Vérifier qu'il contient au moins un fichier .geojson
+                geojson_files = list(abs_path.glob("*.geojson"))
+                if geojson_files:
+                    logger.info(f"Chemin GeoJSON trouvé: {abs_path} ({len(geojson_files)} fichiers)")
+                    return abs_path
+        
+        logger.warning("Aucun répertoire GeoJSON valide trouvé")
+        return Path("Data_Hackathon_IA_2025/couche")  # Fallback
+        
     def check_overlays(self, coordinates: List[Dict]) -> Dict[str, str]:
         """Vérifie superposition coordonnées avec couches géographiques"""
-        if not GEOSPATIAL_AVAILABLE or not coordinates:
-            return {layer: "NON" for layer in self.layer_names}
-        
         overlays = {layer: "NON" for layer in self.layer_names}
+        
+        if not GEOSPATIAL_AVAILABLE:
+            logger.warning("Bibliothèques géospatiales non disponibles - utilisation des valeurs par défaut")
+            return overlays
+        
+        if not coordinates:
+            logger.info("Aucune coordonnée à vérifier")
+            return overlays
+            
+        logger.info(f"Vérification superposition pour {len(coordinates)} coordonnées")
         
         try:
             # Charger les couches si nécessaire
             self._load_layers()
             
+            if not self.layers_cache:
+                logger.warning("Aucune couche géographique chargée - utilisation des valeurs par défaut")
+                return overlays
+            
             # Créer points à partir des coordonnées
             points = [Point(coord["x"], coord["y"]) for coord in coordinates]
+            logger.info(f"Points créés: {[(p.x, p.y) for p in points]}")
             
             # Vérifier intersection avec chaque couche
+            intersections_found = 0
             for layer_name in self.layer_names:
                 if layer_name in self.layers_cache:
                     layer_gdf = self.layers_cache[layer_name]
+                    logger.debug(f"Vérification couche {layer_name} ({len(layer_gdf)} entités)")
+                    
                     for point in points:
-                        if layer_gdf.contains(point).any():
-                            overlays[layer_name] = "OUI"
-                            break
+                        try:
+                            if layer_gdf.contains(point).any():
+                                overlays[layer_name] = "OUI"
+                                intersections_found += 1
+                                logger.info(f"Intersection trouvée: {layer_name} avec point ({point.x}, {point.y})")
+                                break
+                        except Exception as e:
+                            logger.warning(f"Erreur vérification point dans {layer_name}: {e}")
+                else:
+                    logger.debug(f"Couche {layer_name} non disponible en cache")
+            
+            logger.info(f"Superposition terminée: {intersections_found} intersections trouvées")
             
         except Exception as e:
             logger.error(f"Erreur superposition spatiale: {e}")
+            import traceback
+            logger.error(f"Traceback: {traceback.format_exc()}")
         
         return overlays
     
     def _load_layers(self):
-        """Charge les couches GeoJSON en cache"""
+        """Charge les couches GeoJSON en cache avec logs détaillés"""
+        if not self.geojson_dir or not self.geojson_dir.exists():
+            logger.error(f"Répertoire GeoJSON inexistant: {self.geojson_dir}")
+            return
+        
+        logger.info(f"Chargement des couches depuis: {self.geojson_dir}")
+        
         for layer_name in self.layer_names:
             if layer_name not in self.layers_cache:
                 geojson_file = self.geojson_dir / f"{layer_name}.geojson"
+                logger.debug(f"Tentative de chargement: {geojson_file}")
+                
                 if geojson_file.exists():
                     try:
-                        self.layers_cache[layer_name] = gpd.read_file(geojson_file)
+                        gdf = gpd.read_file(geojson_file)
+                        self.layers_cache[layer_name] = gdf
+                        logger.info(f"Couche chargée: {layer_name} ({len(gdf)} entités)")
                     except Exception as e:
                         logger.warning(f"Impossible de charger {layer_name}: {e}")
+                else:
+                    logger.warning(f"Fichier GeoJSON introuvable: {geojson_file}")
+        
+        logger.info(f"Couches chargées en cache: {list(self.layers_cache.keys())}")
 
 class ImagePreprocessor:
     """Préprocessing d'images pour améliorer l'extraction"""

@@ -1,0 +1,63 @@
+# Configuration Render pour déployer les deux APIs
+services:
+  # Backend ANDFChat
+  - type: web
+    name: andfchat-backend
+    env: docker
+    dockerfilePath: ./ANDFChat/Dockerfile
+    dockerContext: ./ANDFChat
+    plan: starter
+    region: frankfurt
+    branch: main
+    buildCommand: ""
+    startCommand: "/home/app/start.sh"
+    healthCheckPath: /health
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false  # À définir manuellement dans Render Dashboard
+      - key: PORT
+        value: 8000
+      - key: ENVIRONMENT
+        value: production
+      - key: PYTHONUNBUFFERED
+        value: 1
+    scaling:
+      minInstances: 1
+      maxInstances: 3
+      targetMemoryPercent: 80
+      targetCPUPercent: 80
+
+  # API Extraction Coordonnées  
+  - type: web
+    name: ia-coordinates-api
+    env: docker
+    dockerfilePath: ./IA/Dockerfile
+    dockerContext: ./IA
+    plan: starter
+    region: frankfurt
+    branch: main
+    buildCommand: ""
+    startCommand: "/home/app/start.sh"
+    healthCheckPath: /health
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false  # À définir manuellement dans Render Dashboard
+      - key: PORT
+        value: 8000
+      - key: ENVIRONMENT
+        value: production
+      - key: PYTHONUNBUFFERED
+        value: 1
+    scaling:
+      minInstances: 1
+      maxInstances: 2
+      targetMemoryPercent: 80
+      targetCPUPercent: 80
+
+# Optionnel: Base de données pour logs/cache
+databases:
+  - name: hackia-redis
+    plan: starter
+    region: frankfurt
+    databaseName: hackia_cache
+    user: hackia_user
